@@ -1,0 +1,9 @@
+pnpm-lock.yaml
+.next
+storybook-static
+coverage
+playwright-report
+test-results
+.lighthouseci
+src/shared/api/generated
+docs/third-party-licenses.md

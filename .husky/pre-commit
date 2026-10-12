@@ -1,0 +1,3 @@
+pnpm exec lint-staged
+[ -d .next/types ] || [ -d .next/dev/types ] || pnpm exec next typegen
+pnpm check:commit

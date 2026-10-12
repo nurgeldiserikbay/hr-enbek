@@ -1,0 +1,15 @@
+{
+  "Common": {
+    "skipToContent": "Skip to main content"
+  },
+  "Metadata": {
+    "title": "HR Enbek — labour resources portal",
+    "description": "Registration of employment contracts and staffing tables, reference information for employers and employees"
+  },
+  "AdminPage": {
+    "title": "Administration"
+  },
+  "NotFoundPage": {
+    "title": "Page not found"
+  }
+}

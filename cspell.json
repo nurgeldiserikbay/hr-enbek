@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en,ru",
+  "import": ["@cspell/dict-ru_ru/cspell-ext.json"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./tooling/cspell/project-words.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["project-words"],
+  "ignoreRegExpList": ["/Lorem ipsum[^\"]*/g"],
+  "ignorePaths": [
+    "node_modules",
+    ".next",
+    "pnpm-lock.yaml",
+    "storybook-static",
+    "coverage",
+    "playwright-report",
+    "test-results",
+    "src/shared/api/generated",
+    "messages/kk.json",
+    "docs/third-party-licenses.md",
+    "**/*.mock.ts",
+    "design-diff"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "threshold": 0,
+  "minTokens": 50,
+  "minLines": 5,
+  "format": ["typescript", "tsx"],
+  "ignore": ["**/*.test.{ts,tsx}", "**/*.stories.tsx", "**/generated/**"],
+  "reporters": ["console"],
+  "gitignore": true
+}

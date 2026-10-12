@@ -1,0 +1,18 @@
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': true
+  esbuild: true
+  unrs-resolver: false
+
+minimumReleaseAge: 4320
+
+strictPeerDependencies: true
+
+saveExact: true
+
+peerDependencyRules:
+  allowedVersions:
+    tsconfck>typescript: '6'
+
+overrides:
+  '@swc/core': 1.15.47
