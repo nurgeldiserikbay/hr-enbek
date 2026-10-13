@@ -11,5 +11,24 @@
   },
   "NotFoundPage": {
     "title": "Page not found"
+  },
+  "Feedback": {
+    "title": "Feedback",
+    "close": "Close",
+    "name": "Your name",
+    "namePlaceholder": "Name",
+    "region": "Region",
+    "regionPlaceholder": "Select a region",
+    "iin": "IIN",
+    "iinPlaceholder": "IIN",
+    "email": "Email",
+    "emailPlaceholder": "name@company.kz",
+    "phone": "Work phone *",
+    "phonePlaceholder": "+7 (777) 777-77-77",
+    "subject": "Subject",
+    "subjectPlaceholder": "Subject",
+    "message": "Description",
+    "messagePlaceholder": "Describe your question or problem: what happened, when and with which employer",
+    "submit": "Send"
   }
 }

@@ -80,12 +80,13 @@
   "AdminPage": {
     "title": "Әкімшілендіру"
   },
+  "AuthShell": {
+    "support": "Тех. қолдау",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
   "StaffLoginPage": {
     "title": "Қызметкерлерге арналған кіру",
-    "support": "Тех. қолдау",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "heading": "Жүйеге кіру",
-    "description": "Жүйеге кіру үшін логин мен құпиясөзді енгізіңіз"
+    "heading": "Жүйеге кіру"
   },
   "StaffSignIn": {
     "login": "ЖСН немесе логин",
@@ -95,7 +96,89 @@
     "showPassword": "Құпиясөзді көрсету",
     "agreementPrefix": "Мен қабылдаймын",
     "agreementLink": "пайдаланушы келісімі.",
-    "submit": "Кіру"
+    "submit": "Кіру",
+    "description": "Жүйеге кіру үшін логин мен құпиясөзді енгізіңіз",
+    "agreementClose": "Жабу",
+    "agreementUnavailable": "Пайдаланушы келісімін жүктеу мүмкін болмады. Бетті жаңартыңыз.",
+    "errors": {
+      "unknown": "Кіру мүмкін болмады. Қайталап көріңіз.",
+      "serviceUnavailable": "Авторизация сервисі уақытша қолжетімсіз. Кейінірек қайталап көріңіз."
+    }
+  },
+  "StaffSignature": {
+    "heading": "Кіруді ЭЦҚ арқылы растаңыз",
+    "description": "NCALayer-де мәтінге аутентификация кілтімен қол қойыңыз. Мәтін 3 минут жарамды.",
+    "storage": "Кілт қоймасы",
+    "storages": {
+      "PKCS12": "Кілт файлы (PKCS12)",
+      "AKKaztokenStore": "Казтокен",
+      "AKKZIDCardStore": "Жеке куәлік",
+      "JKS": "JKS қоймасы"
+    },
+    "sign": "Қол қою",
+    "renew": "Жаңа мәтін алу",
+    "expired": "Қол қоюға арналған мәтіннің мерзімі өтті. Жаңа мәтін алыңыз.",
+    "back": "Құпиясөзді енгізуге оралу",
+    "sessionExpired": "Кіруді растау уақыты өтті. Қайта кіріңіз.",
+    "errors": {
+      "ncaLayerUnavailable": "NCALayer іске қосылмаған. NCALayer-ді іске қосып, қайталап көріңіз.",
+      "ncaLayerTimeout": "NCALayer жауап бермеді. Қайталап көріңіз.",
+      "unknown": "Кіруді растау мүмкін болмады. Қайталап көріңіз.",
+      "serviceUnavailable": "Авторизация сервисі уақытша қолжетімсіз. Кейінірек қайталап көріңіз."
+    }
+  },
+  "SignInPage": {
+    "title": "Кіру",
+    "heading": "Жүйеге кіру",
+    "description": "Кіру тәсілін таңдаңыз",
+    "passportHint": "Қызметкерлер мен жұмыс берушілер үшін Passport Enbek арқылы кіру",
+    "staff": "Мемлекеттік орган қызметкері ретінде кіру",
+    "staffHint": "Логин, құпиясөз және ЭЦҚ арқылы кіру",
+    "errors": {
+      "flowExpired": "Кіру сеансы ескірді. Қайта кіріп көріңіз.",
+      "passportSession": "Passport Enbek-тен деректерді алу мүмкін болмады. Қайта кіріңіз.",
+      "passportInactive": "Passport Enbek-тегі есептік жазба белсенді емес.",
+      "passportUnavailable": "Passport Enbek уақытша қолжетімсіз. Кейінірек қайталап көріңіз.",
+      "unknown": "Кіру мүмкін болмады. Қайталап көріңіз."
+    }
+  },
+  "PassportSignIn": {
+    "action": "Қызметкер немесе жұмыс беруші ретінде кіру"
+  },
+  "ChangePassword": {
+    "heading": "Құпиясөзді ауыстырыңыз",
+    "description": "Құпиясөз уақытша немесе ескірген. Жаңа құпиясөз орнатыңыз: кемінде 12 таңба, әріптер мен сандар, алдыңғы бесеуімен сәйкес келмеуі керек.",
+    "current": "Ағымдағы құпиясөз",
+    "next": "Жаңа құпиясөз",
+    "confirmation": "Жаңа құпиясөзді қайталаңыз",
+    "mismatch": "Жаңа құпиясөздер сәйкес келмейді.",
+    "submit": "Құпиясөзді ауыстыру",
+    "errors": {
+      "unknown": "Құпиясөзді ауыстыру мүмкін болмады. Қайталап көріңіз.",
+      "serviceUnavailable": "Авторизация сервисі уақытша қолжетімсіз. Кейінірек қайталап көріңіз."
+    }
+  },
+  "SignOut": {
+    "action": "Шығу"
+  },
+  "CabinetPage": {
+    "heading": "Жеке кабинет",
+    "loading": "Сеанс деректері жүктелуде…",
+    "failed": "Сеанс деректерін жүктеу мүмкін болмады.",
+    "retry": "Қайталау",
+    "greeting": "Сәлеметсіз бе, {name}!",
+    "empty": "—",
+    "authTypes": {
+      "GOV_2FA": "Мемлекеттік орган қызметкері (құпиясөз және ЭЦҚ)",
+      "PASSPORT_SSO": "Passport Enbek"
+    },
+    "fields": {
+      "authType": "Кіру тәсілі",
+      "iin": "ЖСН",
+      "roles": "Рөлдер",
+      "permissions": "Құқықтар",
+      "employers": "Жұмыс берушілердің БСН"
+    }
   },
   "NotFoundPage": {
     "title": "Бет табылмады"
@@ -117,7 +200,8 @@
     "login": "Кіру/Тіркелу",
     "loginShort": "Кіру",
     "menu": "Мәзір",
-    "ecosystem": "Жұмыспен қамтудың цифрлық экожүйесі"
+    "ecosystem": "Жұмыспен қамтудың цифрлық экожүйесі",
+    "closeMenu": "Мәзірді жабу"
   },
   "Ecosystem": {
     "labourExchange": "Электрондық еңбек биржасы",
@@ -544,5 +628,24 @@
     "copied": "Сілтеме көшірілді",
     "telegram": "Telegram-да бөлісу",
     "email": "Поштамен жіберу"
+  },
+  "Feedback": {
+    "title": "Кері байланыс",
+    "close": "Жабу",
+    "name": "Атыңыз",
+    "namePlaceholder": "Аты",
+    "region": "Өңір",
+    "regionPlaceholder": "Өңірді таңдаңыз",
+    "iin": "ЖСН",
+    "iinPlaceholder": "ЖСН",
+    "email": "Email",
+    "emailPlaceholder": "name@company.kz",
+    "phone": "Жұмыс телефоны *",
+    "phonePlaceholder": "+7 (777) 777-77-77",
+    "subject": "Хат тақырыбы",
+    "subjectPlaceholder": "Тақырып",
+    "message": "Сипаттама",
+    "messagePlaceholder": "Сұрағыңызды немесе мәселеңізді сипаттаңыз: не болды, қашан және қай жұмыс берушімен",
+    "submit": "Жіберу"
   }
 }

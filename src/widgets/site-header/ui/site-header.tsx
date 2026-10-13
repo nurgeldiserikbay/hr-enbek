@@ -1,13 +1,16 @@
 import { useTranslations } from 'next-intl';
 
 import { LanguageMenu } from '@/features/switch-language';
-import { ECOSYSTEM_LINK_KEYS, EXTERNAL_LINKS, Link, ROUTES } from '@/shared/config';
+import { Link, ROUTES } from '@/shared/config';
 import { Button } from '@/shared/ui/button';
 import { Dropdown } from '@/shared/ui/dropdown';
-import { ChevronDown, LayoutGrid, LogOut, Menu } from '@/shared/ui/icon';
+import { ChevronDown, LogOut } from '@/shared/ui/icon';
 import { Logo } from '@/shared/ui/logo';
 import { NavLink } from '@/shared/ui/nav-link';
 
+import { EcosystemMenu } from './ecosystem-menu.tsx';
+import { MENU_LINK } from './menu-link.ts';
+import { MobileMenu } from './mobile-menu.tsx';
 import { SectionLabel } from './section-label.tsx';
 
 const PRIMARY_LINKS = [
@@ -25,16 +28,10 @@ const HELP_LINKS = [
   { key: 'faq', href: ROUTES.helpFaq },
 ] as const;
 
-const MOBILE_LINKS = [...PRIMARY_LINKS, { key: 'news', href: ROUTES.news }, ...HELP_LINKS] as const;
-
 const NAV_LINK =
   'px-3 py-2 text-body-s leading-3 text-text-body hover:text-brand-primary aria-[current=page]:text-brand-primary';
-const MENU_LINK =
-  'flex h-11 items-center rounded-md px-3 text-body-m text-text-heading hover:bg-surface-soft aria-[current=page]:bg-brand-tint aria-[current=page]:text-brand-primary';
-
 export function SiteHeader() {
   const t = useTranslations('Navigation');
-  const tEcosystem = useTranslations('Ecosystem');
 
   return (
     <header className="border-b border-border-strong bg-surface-card lg:bg-transparent">
@@ -44,27 +41,7 @@ export function SiteHeader() {
             <Logo />
           </Link>
 
-          <Dropdown
-            className="hidden lg:block"
-            triggerClassName="size-9 justify-center rounded-md p-2 bg-brand-primary text-brand-on-primary hover:bg-brand-primary-hover"
-            panelClassName="w-72"
-            trigger={
-              <>
-                <LayoutGrid aria-hidden="true" className="size-4" />
-                <span className="sr-only">{t('ecosystem')}</span>
-              </>
-            }
-          >
-            <ul>
-              {ECOSYSTEM_LINK_KEYS.map((key) => (
-                <li key={key}>
-                  <a href={EXTERNAL_LINKS[key]} className={MENU_LINK}>
-                    {tEcosystem(key)}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </Dropdown>
+          <EcosystemMenu className="hidden lg:block" />
         </div>
 
         <nav
@@ -120,33 +97,7 @@ export function SiteHeader() {
               <span className="hidden lg:inline">{t('login')}</span>
             </Link>
           </Button>
-          <Dropdown
-            className="lg:hidden"
-            align="end"
-            triggerClassName="size-10 justify-center rounded-md bg-surface-page text-text-heading"
-            panelClassName="w-[calc(100vw-2rem)]"
-            trigger={
-              <>
-                <Menu aria-hidden="true" className="size-5" />
-                <span className="sr-only">{t('menu')}</span>
-              </>
-            }
-          >
-            <nav aria-label={t('label')}>
-              <ul>
-                {MOBILE_LINKS.map(({ key, href }) => (
-                  <li key={key}>
-                    <NavLink href={href} className={MENU_LINK}>
-                      {t(key)}
-                    </NavLink>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <div className="mt-2 border-t border-border-default pt-2">
-              <LanguageMenu />
-            </div>
-          </Dropdown>
+          <MobileMenu primaryLinks={PRIMARY_LINKS} helpLinks={HELP_LINKS} />
         </div>
       </div>
     </header>

@@ -184,6 +184,10 @@
     font-family: var(--font-sans);
   }
 
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
   .lucide {
     stroke-width: 1px;
   }

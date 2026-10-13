@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { useNow, useTranslations } from 'next-intl';
 
+import { FeedbackTrigger } from '@/features/send-feedback';
 import { LanguageMenu } from '@/features/switch-language';
-import { ECOSYSTEM_LINK_KEYS, EXTERNAL_LINKS, Link, ROUTES } from '@/shared/config';
+import { ECOSYSTEM_LINK_KEYS, EXTERNAL_LINKS, ROUTES } from '@/shared/config';
 import { Button } from '@/shared/ui/button';
 import { Facebook, Instagram } from '@/shared/ui/icon';
 import { Logo } from '@/shared/ui/logo';
@@ -40,7 +41,7 @@ export function SiteFooter() {
             <p className="mt-2 text-body-s lg:mt-3 lg:max-w-84 lg:text-body-m lg:font-medium">{t('supportText')}</p>
           </div>
           <Button asChild className="h-12 lg:h-11 lg:min-w-[204px] lg:rounded-md lg:px-6 lg:text-body-s lg:font-normal">
-            <Link href={ROUTES.feedback}>{t('supportAction')}</Link>
+            <FeedbackTrigger>{t('supportAction')}</FeedbackTrigger>
           </Button>
         </div>
 

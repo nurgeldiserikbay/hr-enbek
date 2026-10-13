@@ -1,19 +1,34 @@
 import { type ComponentProps, type ReactNode, useId } from 'react';
+import type { VariantProps } from 'tailwind-variants';
 
-import { cn } from '@/shared/lib/styles';
+import { cn, tv } from '@/shared/lib/styles';
+
+const textFieldLabelVariants = tv({
+  base: 'text-text-heading',
+  variants: {
+    labelSize: {
+      md: 'text-body-s-medium',
+      sm: 'text-label',
+    },
+  },
+  defaultVariants: {
+    labelSize: 'md',
+  },
+});
 
 type TextFieldProps = Omit<ComponentProps<'input'>, 'id'> &
+  VariantProps<typeof textFieldLabelVariants> &
   Readonly<{
     label: string;
     trailing?: ReactNode;
   }>;
 
-export function TextField({ label, trailing, className, ...inputProps }: TextFieldProps) {
+export function TextField({ label, labelSize, trailing, className, ...inputProps }: TextFieldProps) {
   const inputId = useId();
 
   return (
     <div className={cn('flex flex-col gap-2', className)}>
-      <label htmlFor={inputId} className="text-body-s-medium text-text-heading">
+      <label htmlFor={inputId} className={textFieldLabelVariants({ labelSize })}>
         {label}
       </label>
       <div className="relative">

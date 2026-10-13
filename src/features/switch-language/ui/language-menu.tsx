@@ -42,9 +42,13 @@ const languageMenuVariants = tv({
   },
 });
 
-type LanguageMenuProps = Readonly<VariantProps<typeof languageMenuVariants>>;
+type LanguageMenuProps = Readonly<
+  VariantProps<typeof languageMenuVariants> & {
+    side?: 'top' | 'bottom';
+  }
+>;
 
-export function LanguageMenu({ tone }: LanguageMenuProps) {
+export function LanguageMenu({ tone, side }: LanguageMenuProps) {
   const t = useTranslations('LanguageMenu');
   const currentLocale = useLocale();
   const pathname = usePathname();
@@ -53,8 +57,8 @@ export function LanguageMenu({ tone }: LanguageMenuProps) {
 
   return (
     <Dropdown
-      align="end"
-      side={tone === 'inverse' ? 'top' : 'bottom'}
+      align={side === 'top' ? 'start' : 'end'}
+      side={side ?? (tone === 'inverse' ? 'top' : 'bottom')}
       triggerClassName={styles.trigger()}
       panelClassName={styles.panel()}
       trigger={

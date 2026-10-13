@@ -6,5 +6,5 @@ export default createMiddleware(routing);
 
 export const config = {
   // eslint-disable-next-line unicorn/prefer-string-raw -- Next.js only accepts a static string literal in segment config
-  matcher: ['/((?!api|admin|_next|_vercel|.*\\..*).*)'],
+  matcher: ['/((?!api|admin|cabinet|_next|_vercel|.*\\..*).*)'],
 };

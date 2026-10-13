@@ -40,6 +40,8 @@ export const Uppercase: Story = {
   args: { className: 'w-60 uppercase data-placeholder:normal-case', contentClassName: 'uppercase' },
 };
 
+export const Field: Story = { args: { appearance: 'field', className: 'w-167' } };
+
 export const OpensWithKeyboard: Story = {
   play: async ({ canvasElement }) => {
     const trigger = within(canvasElement).getByRole('combobox');

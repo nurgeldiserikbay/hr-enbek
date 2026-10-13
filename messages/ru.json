@@ -80,12 +80,13 @@
   "AdminPage": {
     "title": "Администрирование"
   },
+  "AuthShell": {
+    "support": "Тех. поддержка",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
   "StaffLoginPage": {
     "title": "Вход для сотрудников",
-    "support": "Тех. поддержка",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "heading": "Войти в систему",
-    "description": "Введите логин и пароль для входа в систему"
+    "heading": "Войти в систему"
   },
   "StaffSignIn": {
     "login": "ИИН или логин",
@@ -95,7 +96,89 @@
     "showPassword": "Показать пароль",
     "agreementPrefix": "Я принимаю",
     "agreementLink": "пользовательское соглашение.",
-    "submit": "Войти"
+    "submit": "Войти",
+    "description": "Введите логин и пароль для входа в систему",
+    "agreementClose": "Закрыть",
+    "agreementUnavailable": "Не удалось загрузить пользовательское соглашение. Обновите страницу.",
+    "errors": {
+      "unknown": "Не удалось выполнить вход. Попробуйте ещё раз.",
+      "serviceUnavailable": "Сервис авторизации временно недоступен. Попробуйте позже."
+    }
+  },
+  "StaffSignature": {
+    "heading": "Подтвердите вход ЭЦП",
+    "description": "Подпишите текст в NCALayer ключом для аутентификации. Текст действует 3 минуты.",
+    "storage": "Хранилище ключа",
+    "storages": {
+      "PKCS12": "Файл ключа (PKCS12)",
+      "AKKaztokenStore": "Казтокен",
+      "AKKZIDCardStore": "Удостоверение личности",
+      "JKS": "Хранилище JKS"
+    },
+    "sign": "Подписать",
+    "renew": "Получить новый текст",
+    "expired": "Срок действия текста для подписи истёк. Получите новый текст.",
+    "back": "Вернуться к вводу пароля",
+    "sessionExpired": "Время на подтверждение входа истекло. Войдите заново.",
+    "errors": {
+      "ncaLayerUnavailable": "NCALayer не запущен. Запустите NCALayer и повторите попытку.",
+      "ncaLayerTimeout": "NCALayer не ответил. Повторите попытку.",
+      "unknown": "Не удалось подтвердить вход. Попробуйте ещё раз.",
+      "serviceUnavailable": "Сервис авторизации временно недоступен. Попробуйте позже."
+    }
+  },
+  "SignInPage": {
+    "title": "Вход",
+    "heading": "Войти в систему",
+    "description": "Выберите способ входа",
+    "passportHint": "Вход через Passport Enbek для работников и работодателей",
+    "staff": "Войти как сотрудник госоргана",
+    "staffHint": "Вход по логину, паролю и ЭЦП",
+    "errors": {
+      "flowExpired": "Сеанс входа устарел. Попробуйте войти снова.",
+      "passportSession": "Не удалось получить данные из Passport Enbek. Войдите заново.",
+      "passportInactive": "Учётная запись неактивна в Passport Enbek.",
+      "passportUnavailable": "Passport Enbek временно недоступен. Попробуйте позже.",
+      "unknown": "Не удалось выполнить вход. Попробуйте ещё раз."
+    }
+  },
+  "PassportSignIn": {
+    "action": "Войти как работник или работодатель"
+  },
+  "ChangePassword": {
+    "heading": "Смените пароль",
+    "description": "Пароль временный или устарел. Задайте новый пароль: не короче 12 символов, буквы и цифры, не совпадает с пятью предыдущими.",
+    "current": "Текущий пароль",
+    "next": "Новый пароль",
+    "confirmation": "Повторите новый пароль",
+    "mismatch": "Новые пароли не совпадают.",
+    "submit": "Сменить пароль",
+    "errors": {
+      "unknown": "Не удалось сменить пароль. Попробуйте ещё раз.",
+      "serviceUnavailable": "Сервис авторизации временно недоступен. Попробуйте позже."
+    }
+  },
+  "SignOut": {
+    "action": "Выйти"
+  },
+  "CabinetPage": {
+    "heading": "Личный кабинет",
+    "loading": "Загружаем данные сессии…",
+    "failed": "Не удалось загрузить данные сессии.",
+    "retry": "Повторить",
+    "greeting": "Здравствуйте, {name}!",
+    "empty": "—",
+    "authTypes": {
+      "GOV_2FA": "Сотрудник госоргана (пароль и ЭЦП)",
+      "PASSPORT_SSO": "Passport Enbek"
+    },
+    "fields": {
+      "authType": "Способ входа",
+      "iin": "ИИН",
+      "roles": "Роли",
+      "permissions": "Права",
+      "employers": "БИН работодателей"
+    }
   },
   "NotFoundPage": {
     "title": "Страница не найдена"
@@ -117,7 +200,8 @@
     "login": "Вход/Регистрация",
     "loginShort": "Вход",
     "menu": "Меню",
-    "ecosystem": "Цифровая экосистема занятости"
+    "ecosystem": "Цифровая экосистема занятости",
+    "closeMenu": "Закрыть меню"
   },
   "Ecosystem": {
     "labourExchange": "Электронная биржа труда",
@@ -544,5 +628,24 @@
     "copied": "Ссылка скопирована",
     "telegram": "Поделиться в Telegram",
     "email": "Отправить по почте"
+  },
+  "Feedback": {
+    "title": "Обратная связь",
+    "close": "Закрыть",
+    "name": "Ваше имя",
+    "namePlaceholder": "Имя",
+    "region": "Регион",
+    "regionPlaceholder": "Выберите регион",
+    "iin": "ИИН",
+    "iinPlaceholder": "ИИН",
+    "email": "Email",
+    "emailPlaceholder": "name@company.kz",
+    "phone": "Рабочий телефон *",
+    "phonePlaceholder": "+7 (777) 777-77-77",
+    "subject": "Тема письма",
+    "subjectPlaceholder": "Тема",
+    "message": "Описание",
+    "messagePlaceholder": "Опишите ваш вопрос или проблему: что произошло, когда и с каким работодателем",
+    "submit": "Отправить"
   }
 }

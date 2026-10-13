@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-import { EXTERNAL_LINKS, Link, ROUTES } from '@/shared/config';
+import { FeedbackTrigger } from '@/features/send-feedback';
+import { EXTERNAL_LINKS } from '@/shared/config';
 import { Button } from '@/shared/ui/button';
 import { Card } from '@/shared/ui/card';
 import { Phone } from '@/shared/ui/icon';
@@ -37,7 +38,7 @@ export function SupportCard({ variant = 'full', className }: SupportCardProps) {
         1414
       </a>
       <Button asChild variant="inverse" className="mt-3 h-10 text-body-l font-normal lg:mt-4">
-        <Link href={ROUTES.feedback}>{t('action')}</Link>
+        <FeedbackTrigger>{t('action')}</FeedbackTrigger>
       </Button>
     </Card>
   );

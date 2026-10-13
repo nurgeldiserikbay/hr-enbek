@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     return Promise.resolve([
       { source: '/:path*', headers: securityHeaders },
       { source: '/admin/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
+      { source: '/cabinet/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
+      { source: '/api/auth/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
     ]);
   },
 };
