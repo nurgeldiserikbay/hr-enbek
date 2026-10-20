@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { connection } from 'next/server';
 import { getTranslations } from 'next-intl/server';
 
 import { StaffLoginPage } from '@/pages/staff-login';
@@ -11,5 +12,6 @@ export async function generateMetadata({ params }: Readonly<PageProps<'/[locale]
 
 export default async function Page({ params }: Readonly<PageProps<'/[locale]/auth'>>) {
   await resolveLocale(params);
+  await connection();
   return <StaffLoginPage />;
 }

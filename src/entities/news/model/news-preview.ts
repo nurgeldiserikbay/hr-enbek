@@ -1,19 +1,30 @@
-import { z } from 'zod';
+import type { CmsFile, ContentLanguage } from '@/shared/api';
+import type { Locale } from '@/shared/config';
 
-export const newsCategorySchema = z.object({
-  id: z.string(),
-  title: z.string(),
-});
+export interface NewsCategory {
+  id: string;
+  title: string;
+  lang: ContentLanguage['lang'];
+}
 
-export type NewsCategory = z.infer<typeof newsCategorySchema>;
+interface NewsCover extends CmsFile {
+  alt: string;
+}
 
-export const newsPreviewSchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  excerpt: z.string(),
-  publishedAt: z.iso.date(),
-  readingMinutes: z.number().int().positive(),
-  category: newsCategorySchema.optional(),
-});
+export interface NewsPreview {
+  slug: string;
+  title: string;
+  excerpt: string | undefined;
+  publishedAt: string;
+  readingMinutes: number;
+  isPinned: boolean;
+  category: NewsCategory | undefined;
+  cover: NewsCover | undefined;
+  language: ContentLanguage;
+}
 
-export type NewsPreview = z.infer<typeof newsPreviewSchema>;
+export interface NewsSitemapEntry {
+  slug: string;
+  updatedAt: string;
+  languages: readonly Locale[];
+}

@@ -1,7 +1,7 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import type { ReactNode } from 'react';
 
-import { getLabourInspections } from '@/entities/labour-inspections';
+import { getRegionOptions } from '@/entities/regions';
 import { FeedbackDialogProvider, FeedbackTrigger } from '@/features/send-feedback';
 import { LanguageMenu } from '@/features/switch-language';
 import { Link, MAIN_CONTENT_ID, ROUTES } from '@/shared/config';
@@ -17,8 +17,7 @@ type AuthShellProps = Readonly<{
 export async function AuthShell({ children }: AuthShellProps) {
   const t = await getTranslations('AuthShell');
   const tNavigation = await getTranslations('Navigation');
-  const inspections = await getLabourInspections();
-  const regions = inspections.map(({ regionId: value, regionName: label }) => ({ value, label }));
+  const regions = await getRegionOptions(await getLocale());
 
   return (
     <FeedbackDialogProvider regions={regions}>

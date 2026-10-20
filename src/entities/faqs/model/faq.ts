@@ -1,16 +1,27 @@
-import { z } from 'zod';
+import type { Locale } from '@/shared/config';
+import type { RichTextDocument } from '@/shared/lib/rich-text';
 
-export const faqCategorySchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  questions: z.array(
-    z.object({
-      id: z.string(),
-      question: z.string(),
-      answer: z.string(),
-      link: z.object({ label: z.string(), href: z.string() }).optional(),
-    }),
-  ),
-});
+export interface FaqLink {
+  label: string;
+  href: string;
+  lang: Locale;
+}
 
-export type FaqCategory = z.infer<typeof faqCategorySchema>;
+export interface FaqQuestion {
+  id: string;
+  question: string;
+  answer: RichTextDocument;
+  lang: Locale;
+  answerLang: Locale;
+  link: FaqLink | undefined;
+}
+
+export interface FaqTopic {
+  id: string;
+  title: string;
+  lang: Locale;
+}
+
+export interface FaqCategory extends FaqTopic {
+  questions: readonly FaqQuestion[];
+}

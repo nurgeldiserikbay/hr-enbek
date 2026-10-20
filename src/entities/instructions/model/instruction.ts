@@ -1,15 +1,13 @@
-import { z } from 'zod';
+import type { ContentLanguage } from '@/shared/api';
+import type { ContentAudience } from '@/shared/config';
 
-import { AUDIENCES } from '@/shared/config';
-
-export const instructionSchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  description: z.string(),
-  audience: z.enum(AUDIENCES),
-  icon: z.string(),
-  url: z.string(),
-  pdfUrl: z.string(),
-});
-
-export type Instruction = z.infer<typeof instructionSchema>;
+export interface Instruction {
+  id: string;
+  title: string;
+  description: string | undefined;
+  audience: ContentAudience;
+  icon: string | undefined;
+  pdfUrl: string;
+  openUrl: string;
+  language: ContentLanguage;
+}

@@ -1,5 +1,6 @@
 'use client';
 
+import { Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useId, useState } from 'react';
 
@@ -20,6 +21,7 @@ export function LabourInspection({ inspections }: LabourInspectionProps) {
   const headingId = useId();
   const [regionId, setRegionId] = useState<string>();
   const selected = inspections.find((inspection) => inspection.regionId === regionId);
+  const department = selected?.department;
 
   return (
     <Card asChild className="px-4 pt-4 pb-4 lg:px-7 lg:py-7.5 lg:pt-6.5">
@@ -39,42 +41,58 @@ export function LabourInspection({ inspections }: LabourInspectionProps) {
           />
         </div>
 
-        {selected && (
-          <div aria-live="polite" className="mt-5">
-            <p className={LABEL}>{selected.organization}</p>
+        {selected !== undefined && department === undefined && (
+          <p aria-live="polite" className={`mt-5 ${VALUE}`}>
+            {t('empty')}
+          </p>
+        )}
+
+        {department !== undefined && (
+          <div aria-live="polite" lang={department.lang} className="mt-5">
+            {department.organization !== undefined && <p className={LABEL}>{department.organization}</p>}
             <div className="mt-4 grid gap-4 lg:grid-cols-[22rem_1fr] lg:gap-x-7">
-              {(selected.address !== undefined || selected.phone !== undefined) && (
+              {(department.address !== undefined ||
+                department.phone !== undefined ||
+                department.email !== undefined) && (
                 <dl>
                   <dt className={LABEL}>{t('address')}</dt>
-                  {selected.address !== undefined && <dd className={VALUE}>{selected.address}</dd>}
-                  {selected.phone !== undefined && (
+                  {department.address !== undefined && <dd className={VALUE}>{department.address}</dd>}
+                  {department.phone !== undefined && (
                     <dd className={`mt-1 ${VALUE}`}>
                       <a
-                        href={`tel:${selected.phone.replaceAll(/[^\d+]/gu, '')}`}
+                        href={`tel:${department.phone.replaceAll(/[^\d+]/gu, '')}`}
                         className="inline-flex items-center gap-2"
                       >
                         <PhoneSmall aria-hidden="true" className="size-5 shrink-0" />
-                        {selected.phone}
+                        {department.phone}
+                      </a>
+                    </dd>
+                  )}
+                  {department.email !== undefined && (
+                    <dd className={`mt-1 ${VALUE}`}>
+                      <a href={`mailto:${department.email}`} className="inline-flex items-center gap-2">
+                        <Mail aria-hidden="true" className="size-5 shrink-0" />
+                        {department.email}
                       </a>
                     </dd>
                   )}
                 </dl>
               )}
               <dl>
-                {selected.inspectors.length > 0 && (
+                {department.inspectors.length > 0 && (
                   <>
                     <dt className={LABEL}>{t('inspector')}</dt>
-                    {selected.inspectors.map((inspector) => (
+                    {department.inspectors.map((inspector) => (
                       <dd key={inspector} className={VALUE}>
                         {inspector}
                       </dd>
                     ))}
                   </>
                 )}
-                {selected.director !== undefined && (
+                {department.director !== undefined && (
                   <>
                     <dt className={LABEL}>{t('director')}</dt>
-                    <dd className={VALUE}>{selected.director}</dd>
+                    <dd className={VALUE}>{department.director}</dd>
                   </>
                 )}
               </dl>

@@ -1,11 +1,7 @@
-import { z } from 'zod';
+import type { NewsPreview } from './news-preview.ts';
 
-import { newsPreviewSchema } from './news-preview.ts';
-
-export const newsFeedSchema = z.object({
-  items: z.array(newsPreviewSchema),
-  page: z.number().int().positive(),
-  pageCount: z.number().int().nonnegative(),
-});
-
-export type NewsFeed = z.infer<typeof newsFeedSchema>;
+export interface NewsFeed {
+  items: readonly NewsPreview[];
+  page: number;
+  pageCount: number;
+}

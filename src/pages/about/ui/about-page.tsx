@@ -1,5 +1,5 @@
 import { LogIn } from 'lucide-react';
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import type { ReactNode } from 'react';
 
 import { getLabourInspections } from '@/entities/labour-inspections';
@@ -79,7 +79,8 @@ function FeatureCarousel({ features, ...section }: FeatureCarouselProps) {
 
 export async function AboutPage() {
   const t = await getTranslations('AboutPage');
-  const [stats, inspections] = await Promise.all([getPortalStats(), getLabourInspections()]);
+  const locale = await getLocale();
+  const [stats, inspections] = await Promise.all([getPortalStats(locale), getLabourInspections(locale)]);
   const carouselLabels = { previousLabel: t('carousel.previous'), nextLabel: t('carousel.next') };
 
   return (

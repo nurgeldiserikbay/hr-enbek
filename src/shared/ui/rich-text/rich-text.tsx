@@ -1,42 +1,193 @@
+import { CircleCheck } from 'lucide-react';
+import Image from 'next/image';
+import type { ReactElement, ReactNode } from 'react';
+
+import { isSafeHref, type RichTextDocument, type RichTextNode } from '@/shared/lib/rich-text';
 import { cn } from '@/shared/lib/styles';
+import { ContentLink } from '@/shared/ui/content-link';
+import { Info, Scale } from '@/shared/ui/icon';
 
 type RichTextProps = Readonly<{
-  html: string;
+  document: RichTextDocument;
   className?: string;
+  lang?: string;
 }>;
 
-const RICH_TEXT_CLASSES = [
-  'text-body-m leading-6.5 text-text-heading lg:text-body-l lg:leading-6.5',
-  '[&>*+*]:mt-6',
-  '[&_h2]:text-h3-sm [&_h2]:text-text-heading lg:[&_h2]:text-h3',
-  '[&_h3]:text-h4 [&_h3]:text-text-heading',
-  '[&_h4]:text-h5 [&_h4]:text-text-heading',
-  '[&_strong]:font-semibold [&_b]:font-semibold',
-  '[&_a]:text-brand-primary-text [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:no-underline',
-  '[&_ul>li]:relative [&_ul>li]:pl-8 [&_li+li]:mt-3 lg:[&_ul>li+li]:mt-2.5',
-  '[&_ul>li]:before:absolute [&_ul>li]:before:top-0.75 [&_ul>li]:before:left-0 [&_ul>li]:before:size-5',
-  '[&_ul>li]:before:bg-brand-primary [&_ul>li]:before:mask-[url(/rich-text/circle-check.svg)] [&_ul>li]:before:mask-contain [&_ul>li]:before:mask-no-repeat',
-  "[&_ul>li]:before:content-['']",
-  '[&_ol]:list-decimal [&_ol]:pl-6 [&_ol>li]:pl-2 [&_ol>li]:marker:text-text-body',
-  '[&_blockquote]:relative [&_blockquote]:rounded-xl [&_blockquote]:bg-status-warning-bg [&_blockquote]:p-4 [&_blockquote]:pl-12',
-  '[&_blockquote]:text-body-m-medium [&_blockquote]:leading-5.5 [&_blockquote]:text-status-warning-strong',
-  '[&_blockquote>*+*]:mt-2',
-  '[&_blockquote]:before:absolute [&_blockquote]:before:top-4.5 [&_blockquote]:before:left-4 [&_blockquote]:before:size-5',
-  '[&_blockquote]:before:bg-status-warning [&_blockquote]:before:mask-[url(/rich-text/scale.svg)] [&_blockquote]:before:mask-contain [&_blockquote]:before:mask-no-repeat',
-  "[&_blockquote]:before:content-['']",
-  '[&_hr]:border-border-default',
-  '[&_img]:h-auto [&_img]:max-w-full [&_img]:rounded-xl',
-  '[&_figcaption]:mt-2 [&_figcaption]:text-body-s [&_figcaption]:text-text-muted',
-  '[&_table]:w-full [&_table]:text-body-s [&_td]:border [&_td]:border-border-default [&_td]:p-2',
-  '[&_th]:border [&_th]:border-border-default [&_th]:bg-surface-soft [&_th]:p-2 [&_th]:text-left [&_th]:font-semibold',
-];
+type ListKind = 'bullet' | 'check' | 'ordered';
 
-export function RichText({ html, className }: RichTextProps) {
+const WEB_URL = /^https?:\/\//iu;
+
+const CALLOUT_STYLES = {
+  warning: {
+    box: 'bg-status-warning-bg text-status-warning-strong',
+    icon: <Scale aria-hidden="true" className="absolute top-4.5 left-4 size-5 text-status-warning" />,
+  },
+  info: {
+    box: 'bg-status-info-bg text-status-info',
+    icon: <Info aria-hidden="true" className="absolute top-4.5 left-4 size-5 text-status-info" />,
+  },
+} as const;
+
+const LIST_ITEM_CLASSES: Record<ListKind, string> = {
+  bullet: 'pl-2 marker:text-text-body',
+  check: 'relative pl-8',
+  ordered: 'pl-2 marker:text-text-body',
+};
+
+const stringAttr = (node: RichTextNode, name: string): string | undefined => {
+  const value = node.attrs?.[name];
+  return typeof value === 'string' ? value : undefined;
+};
+
+const numberAttr = (node: RichTextNode, name: string): number | undefined => {
+  const value = node.attrs?.[name];
+  return typeof value === 'number' && Number.isInteger(value) ? value : undefined;
+};
+
+const LINK_CLASS = 'text-brand-primary-text underline underline-offset-2 hover:no-underline';
+
+function wrapInMark(mark: NonNullable<RichTextNode['marks']>[number], content: ReactNode): ReactElement {
+  switch (mark.type) {
+    case 'bold': {
+      return <strong className="font-semibold">{content}</strong>;
+    }
+    case 'italic': {
+      return <em>{content}</em>;
+    }
+    case 'underline': {
+      return <u>{content}</u>;
+    }
+    case 'link': {
+      const href = mark.attrs?.['href'];
+      return isSafeHref(href) ? (
+        <ContentLink href={href} className={LINK_CLASS}>
+          {content}
+        </ContentLink>
+      ) : (
+        <>{content}</>
+      );
+    }
+    default: {
+      return <>{content}</>;
+    }
+  }
+}
+
+function MarkedText({ node }: Readonly<{ node: RichTextNode }>) {
+  let content = <>{node.text ?? ''}</>;
+  for (const mark of node.marks ?? []) content = wrapInMark(mark, content);
+  return content;
+}
+
+function renderChildren(node: RichTextNode, list?: ListKind): ReactNode {
+  return (node.content ?? []).map((child, index) => (
+    // eslint-disable-next-line @eslint-react/no-array-index-key -- editor nodes have no ids and the document is rendered once on the server
+    <RichTextBlock key={index} node={child} list={list} />
+  ));
+}
+
+function RichTextImage({ node }: Readonly<{ node: RichTextNode }>) {
+  const url = stringAttr(node, 'url');
+  const alt = stringAttr(node, 'alt') ?? '';
+  if (url === undefined || !WEB_URL.test(url)) return null;
+  return (
+    <Image
+      src={url}
+      alt={alt}
+      width={numberAttr(node, 'width') ?? 0}
+      height={numberAttr(node, 'height') ?? 0}
+      sizes="(min-width: 1024px) 720px, 100vw"
+      className="h-auto w-full rounded-xl"
+    />
+  );
+}
+
+function RichTextBlock({
+  node,
+  list,
+}: Readonly<{ node: RichTextNode; list?: ListKind | undefined }>): ReactElement | null {
+  switch (node.type) {
+    case 'text': {
+      return <MarkedText node={node} />;
+    }
+    case 'hardBreak': {
+      return <br />;
+    }
+    case 'paragraph': {
+      return <p>{renderChildren(node)}</p>;
+    }
+    case 'heading': {
+      return numberAttr(node, 'level') === 3 ? (
+        <h3 className="text-h4 text-text-heading">{renderChildren(node)}</h3>
+      ) : (
+        <h2 className="text-h3-sm text-text-heading lg:text-h3">{renderChildren(node)}</h2>
+      );
+    }
+    case 'bulletList': {
+      return <ul className="flex list-disc flex-col gap-3 pl-6 lg:gap-2.5">{renderChildren(node, 'bullet')}</ul>;
+    }
+    case 'checkList': {
+      return <ul className="flex flex-col gap-3 lg:gap-2.5">{renderChildren(node, 'check')}</ul>;
+    }
+    case 'orderedList': {
+      return (
+        <ol start={numberAttr(node, 'start')} className="flex list-decimal flex-col gap-3 pl-6">
+          {renderChildren(node, 'ordered')}
+        </ol>
+      );
+    }
+    case 'listItem': {
+      const kind = list ?? 'bullet';
+      return (
+        <li className={cn(LIST_ITEM_CLASSES[kind], '[&>*+*]:mt-2')}>
+          {kind === 'check' && (
+            <CircleCheck
+              aria-hidden="true"
+              className="absolute top-0.75 left-0 size-5 fill-brand-primary text-surface-card"
+            />
+          )}
+          {renderChildren(node)}
+        </li>
+      );
+    }
+    case 'blockquote': {
+      return (
+        <blockquote className="border-l-4 border-brand-primary pl-4 text-text-body [&>*+*]:mt-2">
+          {renderChildren(node)}
+        </blockquote>
+      );
+    }
+    case 'callout': {
+      const style = stringAttr(node, 'variant') === 'warning' ? CALLOUT_STYLES.warning : CALLOUT_STYLES.info;
+      return (
+        <div
+          role="note"
+          className={cn('relative rounded-xl p-4 pl-12 text-body-m-medium leading-5.5 [&>*+*]:mt-2', style.box)}
+        >
+          {style.icon}
+          {renderChildren(node)}
+        </div>
+      );
+    }
+    case 'image': {
+      return <RichTextImage node={node} />;
+    }
+    case 'horizontalRule': {
+      return <hr className="border-border-default" />;
+    }
+    default: {
+      return null;
+    }
+  }
+}
+
+export function RichText({ document, className, lang }: RichTextProps) {
   return (
     <div
-      className={cn(RICH_TEXT_CLASSES, className)}
-      // eslint-disable-next-line @eslint-react/dom-no-dangerously-set-innerhtml -- admin body, sanitized by sanitizeRichText at the API boundary
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
+      lang={lang}
+      className={cn('text-body-m leading-6.5 text-text-heading lg:text-body-l lg:leading-6.5 [&>*+*]:mt-6', className)}
+    >
+      {renderChildren(document)}
+    </div>
   );
 }

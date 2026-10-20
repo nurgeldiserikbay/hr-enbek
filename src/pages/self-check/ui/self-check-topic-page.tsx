@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { getLocale } from 'next-intl/server';
 
 import { getLabourInspections } from '@/entities/labour-inspections';
 import { getSelfCheckTopic } from '@/entities/self-checks';
@@ -12,7 +13,7 @@ type SelfCheckTopicPageProps = Readonly<{
 }>;
 
 export async function SelfCheckTopicPage({ topicId }: SelfCheckTopicPageProps) {
-  const [topic, inspections] = await Promise.all([getSelfCheckTopic(topicId), getLabourInspections()]);
+  const [topic, inspections] = await Promise.all([getSelfCheckTopic(topicId), getLabourInspections(await getLocale())]);
   if (topic === undefined) notFound();
 
   return (

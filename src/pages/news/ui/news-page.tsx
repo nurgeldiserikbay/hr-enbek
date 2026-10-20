@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { getLabourInspections } from '@/entities/labour-inspections';
 import { getNews, getNewsCategories, NewsCard } from '@/entities/news';
-import { Link, MAIN_CONTENT_ID, ROUTES } from '@/shared/config';
+import { Link, type Locale, MAIN_CONTENT_ID, ROUTES } from '@/shared/config';
 import { Card } from '@/shared/ui/card';
 import { Chip } from '@/shared/ui/chip';
 import { Pagination } from '@/shared/ui/pagination';
@@ -13,17 +13,18 @@ import { LabourInspection } from '@/widgets/labour-inspection';
 import { type NewsFeedFilters, newsFeedHref } from '../lib/news-feed-href.ts';
 
 type NewsPageProps = Readonly<{
+  locale: Locale;
   filters: NewsFeedFilters;
 }>;
 
-export async function NewsPage({ filters }: NewsPageProps) {
+export async function NewsPage({ locale, filters }: NewsPageProps) {
   const t = await getTranslations('NewsPage');
   const [feed, categories, inspections] = await Promise.all([
-    getNews(filters),
-    getNewsCategories(),
-    getLabourInspections(),
+    getNews({ locale, ...filters }),
+    getNewsCategories(locale),
+    getLabourInspections(locale),
   ]);
-  const categoryOptions = [{ id: undefined, title: t('all') }, ...categories];
+  const categoryOptions = [{ id: undefined, title: t('all'), lang: locale }, ...categories];
 
   return (
     <main id={MAIN_CONTENT_ID} className="page-container flex flex-col pt-6 pb-12 lg:pt-14 lg:pb-11">
@@ -45,10 +46,14 @@ export async function NewsPage({ filters }: NewsPageProps) {
         className="-mx-4 mt-6 overflow-x-auto px-4 lg:mx-0 lg:mt-8 lg:overflow-visible lg:px-0"
       >
         <ul className="flex gap-2 lg:flex-wrap">
-          {categoryOptions.map(({ id, title }) => (
+          {categoryOptions.map(({ id, title, lang }) => (
             <li key={id ?? 'all'} className="shrink-0">
               <Chip asChild isActive={filters.category === id}>
-                <Link href={newsFeedHref(ROUTES.news, { ...filters, category: id, page: 1 })} scroll={false}>
+                <Link
+                  href={newsFeedHref(ROUTES.news, { ...filters, category: id, page: 1 })}
+                  lang={lang}
+                  scroll={false}
+                >
                   {title}
                 </Link>
               </Chip>
@@ -65,7 +70,7 @@ export async function NewsPage({ filters }: NewsPageProps) {
       ) : (
         <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:mt-13 lg:grid-cols-3 lg:gap-6">
           {feed.items.map((news) => (
-            <li key={news.id} className="flex">
+            <li key={news.slug} className="flex">
               <NewsCard news={news} headingLevel="h2" className="w-full" />
             </li>
           ))}

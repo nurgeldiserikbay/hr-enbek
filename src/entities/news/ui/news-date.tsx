@@ -10,7 +10,7 @@ export function NewsDate({ value }: NewsDateProps) {
 
   return (
     <time dateTime={value}>
-      {format.dateTime(date, { day: 'numeric', month: 'long', timeZone: 'UTC' })} {date.getUTCFullYear()}
+      {format.dateTime(date, { day: 'numeric', month: 'long' })} {format.dateTime(date, { year: 'numeric' })}
     </time>
   );
 }

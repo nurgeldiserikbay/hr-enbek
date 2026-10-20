@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { RootDocument } from '@/app';
-import { env, resolveLocale, routing } from '@/shared/config';
+import { env, localizedAlternates, resolveLocale, routing } from '@/shared/config';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -16,13 +16,7 @@ export async function generateMetadata({ params }: Readonly<LayoutProps<'/[local
     metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
     title: { default: t('title'), template: t('titleTemplate') },
     description: t('description'),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        ...Object.fromEntries(routing.locales.map((code) => [code, `/${code}`])),
-        'x-default': `/${routing.defaultLocale}`,
-      },
-    },
+    alternates: localizedAlternates(locale, '/'),
   };
 }
 

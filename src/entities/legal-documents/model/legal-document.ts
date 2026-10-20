@@ -1,18 +1,19 @@
-import { z } from 'zod';
+import type { ContentLanguage } from '@/shared/api';
+import type { Locale } from '@/shared/config';
 
-export const legalDocumentGroupSchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  icon: z.string(),
-  documents: z.array(
-    z.object({
-      id: z.string(),
-      title: z.string(),
-      description: z.string(),
-      url: z.url(),
-      pdfUrl: z.string(),
-    }),
-  ),
-});
+export interface LegalDocument {
+  id: string;
+  title: string;
+  description: string | undefined;
+  openUrl: string | undefined;
+  pdfUrl: string | undefined;
+  language: ContentLanguage;
+}
 
-export type LegalDocumentGroup = z.infer<typeof legalDocumentGroupSchema>;
+export interface LegalDocumentGroup {
+  id: string;
+  title: string;
+  icon: string | undefined;
+  lang: Locale;
+  documents: readonly LegalDocument[];
+}

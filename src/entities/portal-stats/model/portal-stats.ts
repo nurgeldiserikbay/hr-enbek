@@ -1,9 +1,17 @@
-import { z } from 'zod';
+import type { Locale } from '@/shared/config';
 
-export const portalStatsSchema = z.object({
-  contracts: z.number().int().nonnegative(),
-  employers: z.number().int().nonnegative(),
-  employees: z.number().int().nonnegative(),
-});
+export type IndicatorUnit = 'count' | 'percent' | 'tenge';
 
-export type PortalStats = z.infer<typeof portalStatsSchema>;
+interface Indicator {
+  code: string;
+  title: string;
+  value: number;
+  unit: IndicatorUnit;
+  lang: Locale;
+}
+
+export interface PortalStats {
+  indicators: readonly Indicator[];
+  calculatedAt: string | undefined;
+  isStale: boolean;
+}

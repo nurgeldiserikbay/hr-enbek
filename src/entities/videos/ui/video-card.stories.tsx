@@ -10,12 +10,13 @@ const meta = {
   args: {
     badge: <Tag size="sm">Работодателю</Tag>,
     video: {
-      id: 'contract-registration',
+      id: '5b1c2d3e-4f50-4a6b-8c7d-9e0f1a2b3c4d',
       title: 'Регистрация трудового договора',
       audience: 'employer',
       durationSeconds: 252,
       thumbnailUrl: '/mock/videos/thumbnail.jpg',
       url: 'https://www.youtube.com/@enbekkz',
+      language: { lang: 'ru', fallbackFields: [] },
     },
   },
   decorators: [
@@ -30,3 +31,9 @@ const meta = {
 export default meta;
 
 export const Default: StoryObj<typeof meta> = {};
+
+export const WithoutPreviewAndDuration: StoryObj<typeof meta> = {
+  args: {
+    video: { ...meta.args.video, thumbnailUrl: undefined, durationSeconds: undefined },
+  },
+};

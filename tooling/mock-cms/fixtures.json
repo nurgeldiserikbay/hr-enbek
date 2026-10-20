@@ -1,0 +1,2341 @@
+{
+  "previewFileId": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+  "newsCategories": [
+    {
+      "code": "legislation",
+      "name": "Законодательство",
+      "langUsed": "ru"
+    },
+    {
+      "code": "services",
+      "name": "Сервисы",
+      "langUsed": "ru"
+    },
+    {
+      "code": "updates",
+      "name": "Обновления",
+      "langUsed": "ru"
+    },
+    {
+      "code": "events",
+      "name": "Мероприятия",
+      "langUsed": "ru"
+    }
+  ],
+  "news": [
+    {
+      "slug": "ectd-deadline-liability",
+      "category": {
+        "code": "legislation",
+        "name": "Законодательство",
+        "langUsed": "ru"
+      },
+      "title": "Введена ответственность за нарушение сроков внесения сведений в ЕСУТД",
+      "summary": "С 12 марта 2026 года за нарушение порядка и сроков внесения сведений о трудовых договорах в Единую систему учёта трудовых договоров предусмотрена административная ответственность.",
+      "subtitle": "С 12 марта 2026 года за нарушение порядка и сроков внесения сведений о трудовых договорах в Единую систему учёта трудовых договоров предусмотрена административная ответственность.",
+      "publishedAt": "2026-03-12T04:00:00Z",
+      "readingMinutes": 3,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Работодатели обязаны вносить в ЕСУТД сведения о заключении, изменении и прекращении трудовых договоров. Теперь нарушение порядка и сроков внесения этих сведений влечёт ответственность по статье 98 Кодекса Республики Казахстан об административных правонарушениях."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Что проверить в кадровом учёте"
+              }
+            ]
+          },
+          {
+            "type": "checkList",
+            "content": [
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Все действующие трудовые договоры зарегистрированы в ЕСУТД"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Дополнительные соглашения внесены после каждого изменения условий"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Сведения о расторжении договоров внесены вовремя"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "listItem",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Данные работников совпадают с документами"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 2
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Как упростить работу"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Подписывайте электронные трудовые договоры через eGov Mobile Business — после подписания сведения сразу попадают в ЕСУТД. Проверить компанию на соблюдение требований можно с помощью самопроверки на портале — без входа и регистрации."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "attrs": {
+              "variant": "warning"
+            },
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Размер штрафа и точные сроки внесения сведений уточняйте в действующей редакции КоАП РК и Трудового кодекса РК."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Введена ответственность за нарушение сроков внесения сведений в ЕСУТД",
+        "description": "С 12 марта 2026 года за нарушение порядка и сроков внесения сведений о трудовых договорах в Единую систему учёта трудовых договоров предусмотрена административная ответственность."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "electronic-sick-leave",
+      "category": {
+        "code": "services",
+        "name": "Сервисы",
+        "langUsed": "ru"
+      },
+      "title": "Электронные больничные листы приходят работодателю автоматически",
+      "summary": "Листки нетрудоспособности поступают на портал из медицинских систем.",
+      "subtitle": "Листки нетрудоспособности поступают на портал из медицинских систем.",
+      "publishedAt": "2026-02-24T04:00:00Z",
+      "readingMinutes": 2,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Листки временной нетрудоспособности теперь поступают на портал напрямую из медицинских информационных систем. Работнику не нужно приносить бумажный больничный."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Работодатель видит листок в кабинете сразу после закрытия больничного и может начислить пособие без дополнительных запросов."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Электронные больничные листы приходят работодателю автоматически",
+        "description": "Листки нетрудоспособности поступают на портал из медицинских систем."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "electronic-collective-agreement",
+      "category": {
+        "code": "updates",
+        "name": "Обновления",
+        "langUsed": "ru"
+      },
+      "title": "Электронный коллективный договор: подписание и проверка по QR",
+      "summary": "Профсоюз и работодатель согласуют ЭКД онлайн, подлинность проверяется по QR.",
+      "subtitle": "Профсоюз и работодатель согласуют ЭКД онлайн, подлинность проверяется по QR.",
+      "publishedAt": "2026-02-10T04:00:00Z",
+      "readingMinutes": 4,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Коллективный договор можно подготовить, согласовать и подписать на портале. Стороны видят все версии документа и комментарии."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Подписанный договор получает QR-код, по которому любой работник может проверить его подлинность."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Электронный коллективный договор: подписание и проверка по QR",
+        "description": "Профсоюз и работодатель согласуют ЭКД онлайн, подлинность проверяется по QR."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "working-conditions-reference",
+      "category": {
+        "code": "services",
+        "name": "Сервисы",
+        "langUsed": "ru"
+      },
+      "title": "Расширен справочник «Условия труда»",
+      "summary": "Договоры с вредными условиями можно оформить по обновлённому списку производств.",
+      "subtitle": "Договоры с вредными условиями можно оформить по обновлённому списку производств.",
+      "publishedAt": "2026-01-28T04:00:00Z",
+      "readingMinutes": 2,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "В справочник добавлены производства, работы и профессии с вредными и опасными условиями труда."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "При оформлении договора условия труда выбираются из списка, а компенсации подставляются автоматически."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Расширен справочник «Условия труда»",
+        "description": "Договоры с вредными условиями можно оформить по обновлённому списку производств."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "staffing-with-branches",
+      "category": {
+        "code": "updates",
+        "name": "Обновления",
+        "langUsed": "ru"
+      },
+      "title": "Штатное расписание: согласование с филиалами",
+      "summary": "Головная организация вносит расписание филиалов централизованно с их согласия.",
+      "subtitle": "Головная организация вносит расписание филиалов централизованно с их согласия.",
+      "publishedAt": "2026-01-15T04:00:00Z",
+      "readingMinutes": 3,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Головная организация может вести штатное расписание филиалов в одном кабинете."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Изменения вступают в силу после согласования ответственным сотрудником филиала."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Штатное расписание: согласование с филиалами",
+        "description": "Головная организация вносит расписание филиалов централизованно с их согласия."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "employment-certificate-in-app",
+      "category": {
+        "code": "services",
+        "name": "Сервисы",
+        "langUsed": "ru"
+      },
+      "title": "Справка с места работы — в приложении Enbek HR",
+      "summary": "Работник скачивает справку по данным своих трудовых договоров.",
+      "subtitle": "Работник скачивает справку по данным своих трудовых договоров.",
+      "publishedAt": "2025-12-22T04:00:00Z",
+      "readingMinutes": 2,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Справка формируется по данным ЕСУТД и подписывается электронной цифровой подписью портала."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Подлинность справки проверяется по QR-коду, поэтому её принимают банки и государственные органы."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Справка с места работы — в приложении Enbek HR",
+        "description": "Работник скачивает справку по данным своих трудовых договоров."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "termination-escalation",
+      "category": {
+        "code": "legislation",
+        "name": "Законодательство",
+        "langUsed": "ru"
+      },
+      "title": "Запрос на расторжение: эскалация инспектору через 3 дня",
+      "summary": "Если работодатель не отвечает, запрос автоматически передаётся в инспекцию труда.",
+      "subtitle": "Если работодатель не отвечает, запрос автоматически передаётся в инспекцию труда.",
+      "publishedAt": "2025-12-05T04:00:00Z",
+      "readingMinutes": 5,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Работник может направить запрос на расторжение трудового договора через портал."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Если работодатель не рассмотрит запрос в течение трёх рабочих дней, он автоматически передаётся государственному инспектору труда."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Запрос на расторжение: эскалация инспектору через 3 дня",
+        "description": "Если работодатель не отвечает, запрос автоматически передаётся в инспекцию труда."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "hr-webinar",
+      "category": {
+        "code": "events",
+        "name": "Мероприятия",
+        "langUsed": "ru"
+      },
+      "title": "Вебинар для кадровиков: работа в обновлённом кабинете",
+      "summary": "Разберём реестр договоров, штатное расписание и личные дела сотрудников.",
+      "subtitle": "Разберём реестр договоров, штатное расписание и личные дела сотрудников.",
+      "publishedAt": "2025-11-20T04:00:00Z",
+      "readingMinutes": 3,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "На вебинаре покажем новый реестр договоров, работу со штатным расписанием и личными делами."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Участие бесплатное, запись будет доступна в разделе видеоинструкций."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Вебинар для кадровиков: работа в обновлённом кабинете",
+        "description": "Разберём реестр договоров, штатное расписание и личные дела сотрудников."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "self-check-new-topics",
+      "category": {
+        "code": "updates",
+        "name": "Обновления",
+        "langUsed": "ru"
+      },
+      "title": "Самопроверка: новые темы по оплате и рабочему времени",
+      "summary": "Проверьте компанию по 6 темам и получите рекомендации без входа.",
+      "subtitle": "Проверьте компанию по 6 темам и получите рекомендации без входа.",
+      "publishedAt": "2025-11-06T04:00:00Z",
+      "readingMinutes": 2,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "В самопроверку добавлены темы об оплате труда и рабочем времени."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Результат показывает уровень риска и конкретные шаги по исправлению нарушений."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Самопроверка: новые темы по оплате и рабочему времени",
+        "description": "Проверьте компанию по 6 темам и получите рекомендации без входа."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    },
+    {
+      "slug": "egov-mobile-business-signing",
+      "category": {
+        "code": "services",
+        "name": "Сервисы",
+        "langUsed": "ru"
+      },
+      "title": "Подписание ЭТД через eGov Mobile Business",
+      "summary": "Работодатель подписывает договор ЭЦП или QR, работник — в eGov Mobile.",
+      "subtitle": "Работодатель подписывает договор ЭЦП или QR, работник — в eGov Mobile.",
+      "publishedAt": "2025-10-23T04:00:00Z",
+      "readingMinutes": 3,
+      "cover": null,
+      "coverAlt": null,
+      "isPinned": false,
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Электронный трудовой договор подписывается работодателем через eGov Mobile Business, а работником — в eGov Mobile."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "После подписания сведения о договоре сразу попадают в ЕСУТД."
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "title": "Подписание ЭТД через eGov Mobile Business",
+        "description": "Работодатель подписывает договор ЭЦП или QR, работник — в eGov Mobile."
+      },
+      "languages": ["kk", "ru"],
+      "langUsed": "ru"
+    }
+  ],
+  "faq": [
+    {
+      "code": "employment-contracts",
+      "name": "Трудовые договоры",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "8e8bf6f6-594d-591e-b59a-1facfeff3cc7",
+          "question": "Нужно ли регистрировать трудовой договор в ЕСУТД?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Да. Работодатель вносит сведения о каждом трудовом договоре, дополнительном соглашении и расторжении в ЕСУТД через личный кабинет HR Enbek. Электронный договор подписывается сторонами удалённо, бумажный — регистрируется по реквизитам."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": {
+            "id": "9f4eda32-afd7-55ca-aca2-34f9b8e37bcc",
+            "audience": "EMPLOYER",
+            "icon": "file-pen",
+            "title": "Регистрация трудового договора",
+            "description": "Как внести трудовой договор и дополнительное соглашение в ЕСУТД",
+            "file": {
+              "id": "4c0783fa-9792-5fdf-8185-249f6cd8cea8",
+              "url": "/cms/api/v1/public/files/4c0783fa-9792-5fdf-8185-249f6cd8cea8",
+              "width": null,
+              "height": null,
+              "thumbnailUrl": null
+            },
+            "url": null,
+            "langUsed": "ru"
+          },
+          "videoInstruction": null,
+          "linkLabel": "Инструкция: регистрация трудового договора",
+          "langUsed": "ru"
+        },
+        {
+          "id": "4e09c298-d643-5f19-8ad8-0a3ee9f174a1",
+          "question": "Как исправить ошибку в уже зарегистрированном договоре?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Внесите изменения через дополнительное соглашение или запросите корректировку в личном кабинете. Исправленные сведения передаются в ЕСУТД автоматически."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": null,
+          "linkLabel": null,
+          "langUsed": "ru"
+        },
+        {
+          "id": "78cf7e07-4799-5cfc-ac95-2d9d8ba33899",
+          "question": "Что делать с договорами при смене БИН после реорганизации?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Договоры переносятся на новый БИН через сервис реорганизации. Повторно регистрировать каждый договор не нужно."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": {
+            "id": "6a54f998-178a-5b01-b397-d9acb479f3f0",
+            "audience": "EMPLOYER",
+            "icon": "building-2",
+            "title": "Смена БИН при реорганизации",
+            "description": "Перенос трудовых договоров на новый БИН",
+            "file": {
+              "id": "79a91f83-b54b-5de4-9183-e8b7d16f0232",
+              "url": "/cms/api/v1/public/files/79a91f83-b54b-5de4-9183-e8b7d16f0232",
+              "width": null,
+              "height": null,
+              "thumbnailUrl": null
+            },
+            "url": null,
+            "langUsed": "ru"
+          },
+          "videoInstruction": null,
+          "linkLabel": "Инструкция: смена БИН",
+          "langUsed": "ru"
+        },
+        {
+          "id": "b80b7d63-1b34-5426-baa8-0e82912cfb45",
+          "question": "Можно ли зарегистрировать договор гражданско-правового характера?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Да, договоры ГПХ регистрируются в отдельном разделе личного кабинета и учитываются отдельно от трудовых."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": null,
+          "linkLabel": null,
+          "langUsed": "ru"
+        }
+      ]
+    },
+    {
+      "code": "additional-agreements",
+      "name": "Дополнительные соглашения",
+      "langUsed": "ru",
+      "items": []
+    },
+    {
+      "code": "electronic-contract",
+      "name": "Электронный договор",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "4151382c-99f7-5797-a5d0-97d3e69cd0ad",
+          "question": "Как подписать трудовой договор без визита в офис?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Работодатель подписывает электронный трудовой договор ЭЦП или QR-кодом через eGov Mobile Business, работник подтверждает его в eGov Mobile. После подписания договор регистрируется в ЕСУТД и появляется в приложении Enbek HR."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": {
+            "id": "d3d61ad5-1bce-5155-9b71-2408619d33f8",
+            "audience": "EMPLOYER",
+            "title": "Заключение ЭТД через eGov Mobile Business",
+            "description": null,
+            "videoUrl": "https://www.youtube.com/@enbekkz",
+            "preview": {
+              "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+              "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+              "width": 972,
+              "height": 480,
+              "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+            },
+            "durationSeconds": 220,
+            "langUsed": "ru"
+          },
+          "linkLabel": "Видеоинструкция: заключение ЭТД",
+          "langUsed": "ru"
+        },
+        {
+          "id": "8626cb85-7259-524d-8d97-cd10829198a4",
+          "question": "Что нужно работнику, чтобы подписать договор?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Установленное приложение eGov Mobile и действующая регистрация номера телефона в базе мобильных граждан."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": null,
+          "linkLabel": null,
+          "langUsed": "ru"
+        }
+      ]
+    },
+    {
+      "code": "notifications",
+      "name": "Уведомления и запросы",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "3310a2c4-d70a-53fb-ac0f-36f2dbe4cb33",
+          "question": "Работодатель не отвечает на запрос о расторжении — что делать?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Если работодатель не ответил в установленный срок, запрос автоматически передаётся в региональную инспекцию труда."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": null,
+          "linkLabel": null,
+          "langUsed": "ru"
+        },
+        {
+          "id": "0145c212-c472-5024-8c45-9b36f440683a",
+          "question": "О чём приходят уведомления в личном кабинете?",
+          "answer": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "О новых договорах на подпись, изменениях условий, запросах работников и сроках внесения сведений в ЕСУТД."
+                  }
+                ]
+              }
+            ]
+          },
+          "instruction": null,
+          "videoInstruction": null,
+          "linkLabel": null,
+          "langUsed": "ru"
+        }
+      ]
+    },
+    {
+      "code": "proactive-services",
+      "name": "Проактивные услуги",
+      "langUsed": "ru",
+      "items": []
+    },
+    {
+      "code": "non-residents",
+      "name": "Трудовые договоры с нерезидентами РК",
+      "langUsed": "ru",
+      "items": []
+    },
+    {
+      "code": "occupational-safety",
+      "name": "Охрана труда",
+      "langUsed": "ru",
+      "items": []
+    }
+  ],
+  "legalActs": [
+    {
+      "code": "laws",
+      "name": "Законы",
+      "icon": "scale",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "d84a320a-c6fc-5a2d-bcfe-ced2256f2abc",
+          "title": "Трудовой кодекс Республики Казахстан",
+          "description": "Основной закон, регулирующий трудовые отношения",
+          "url": "https://adilet.zan.kz/rus/docs/K1500000414",
+          "file": {
+            "id": "38adae9b-4710-50e7-b639-0e77ddb07686",
+            "url": "/cms/api/v1/public/files/38adae9b-4710-50e7-b639-0e77ddb07686",
+            "width": null,
+            "height": null,
+            "thumbnailUrl": null
+          },
+          "langUsed": "ru"
+        }
+      ]
+    },
+    {
+      "code": "rules",
+      "name": "Правила",
+      "icon": "gavel",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "526a6ad0-b514-58c5-8249-674784ac0986",
+          "title": "Правила предоставления сведений о трудовом договоре",
+          "description": "Порядок внесения сведений о трудовых договорах в ЕСУТД",
+          "url": "https://adilet.zan.kz/rus/docs/V2000021335",
+          "file": {
+            "id": "85b36a82-ca46-5647-8f2f-f2857e468df5",
+            "url": "/cms/api/v1/public/files/85b36a82-ca46-5647-8f2f-f2857e468df5",
+            "width": null,
+            "height": null,
+            "thumbnailUrl": null
+          },
+          "langUsed": "ru"
+        },
+        {
+          "id": "5c0b677f-128a-5279-b255-446c5940bc54",
+          "title": "Правила осуществления профессиональной выплаты",
+          "description": "Условия и порядок назначения выплаты",
+          "url": "https://adilet.zan.kz/rus/docs/V2300032787",
+          "file": {
+            "id": "1798dd75-b195-5efb-9db9-c1629aae9d96",
+            "url": "/cms/api/v1/public/files/1798dd75-b195-5efb-9db9-c1629aae9d96",
+            "width": null,
+            "height": null,
+            "thumbnailUrl": null
+          },
+          "langUsed": "ru"
+        }
+      ]
+    },
+    {
+      "code": "recommendations",
+      "name": "Методические рекомендации",
+      "icon": "book-open",
+      "langUsed": "ru",
+      "items": [
+        {
+          "id": "457b1084-4d90-544a-b9bc-0144470a9f54",
+          "title": "Методические рекомендации по страхованию работников от несчастных случаев",
+          "description": "Для работодателей и специалистов по охране труда",
+          "url": "https://www.enbek.gov.kz",
+          "file": {
+            "id": "f767d7e9-4be9-5bf3-abcd-87ca4ce3d8bf",
+            "url": "/cms/api/v1/public/files/f767d7e9-4be9-5bf3-abcd-87ca4ce3d8bf",
+            "width": null,
+            "height": null,
+            "thumbnailUrl": null
+          },
+          "langUsed": "ru"
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "9f4eda32-afd7-55ca-aca2-34f9b8e37bcc",
+      "audience": "EMPLOYER",
+      "icon": "file-pen",
+      "title": "Регистрация трудового договора",
+      "description": "Как внести трудовой договор и дополнительное соглашение в ЕСУТД",
+      "file": {
+        "id": "4c0783fa-9792-5fdf-8185-249f6cd8cea8",
+        "url": "/cms/api/v1/public/files/4c0783fa-9792-5fdf-8185-249f6cd8cea8",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "400f70ca-9e2c-5403-8890-b6a6fe23e701",
+      "audience": "EMPLOYER",
+      "icon": "qr-code",
+      "title": "Заключение электронного трудового договора",
+      "description": "Подписание ЭЦП или QR через eGov Mobile Business",
+      "file": {
+        "id": "357ed868-6b6f-5c3f-b2bf-25c1db74e364",
+        "url": "/cms/api/v1/public/files/357ed868-6b6f-5c3f-b2bf-25c1db74e364",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "c2cc7d75-ad04-5cb8-8719-2c9b47954ec4",
+      "audience": "EMPLOYER",
+      "icon": "briefcase",
+      "title": "Договоры гражданско-правового характера",
+      "description": "Регистрация и учёт договоров ГПХ",
+      "file": {
+        "id": "50f90909-0a9e-592f-8482-4225c7191717",
+        "url": "/cms/api/v1/public/files/50f90909-0a9e-592f-8482-4225c7191717",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "bdb30811-a40d-5850-9337-c015e44b8dde",
+      "audience": "EMPLOYER",
+      "icon": "layers",
+      "title": "Штатное расписание",
+      "description": "Создание проекта, утверждение и отправка назначений в ЕСУТД",
+      "file": {
+        "id": "61b68638-b558-563e-87c8-f5fd62799474",
+        "url": "/cms/api/v1/public/files/61b68638-b558-563e-87c8-f5fd62799474",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "f33ab3c0-3e0f-521d-b3af-589bee354284",
+      "audience": "EMPLOYER",
+      "icon": "shield-check",
+      "title": "Вредные условия труда",
+      "description": "Указание условий труда в договоре и спецвыплата",
+      "file": {
+        "id": "1d353470-8a38-5d80-9529-7bea1821227f",
+        "url": "/cms/api/v1/public/files/1d353470-8a38-5d80-9529-7bea1821227f",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "144c2daf-add0-5954-a0e8-d6118f698b69",
+      "audience": "WORKER",
+      "icon": "refresh-cw",
+      "title": "Корректировка и расторжение",
+      "description": "Запросы работника, сроки рассмотрения и эскалация инспектору",
+      "file": {
+        "id": "ae39c7ed-3ac6-5ad9-802a-9ebff0f94c94",
+        "url": "/cms/api/v1/public/files/ae39c7ed-3ac6-5ad9-802a-9ebff0f94c94",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "6a54f998-178a-5b01-b397-d9acb479f3f0",
+      "audience": "EMPLOYER",
+      "icon": "building-2",
+      "title": "Смена БИН при реорганизации",
+      "description": "Перенос трудовых договоров на новый БИН",
+      "file": {
+        "id": "79a91f83-b54b-5de4-9183-e8b7d16f0232",
+        "url": "/cms/api/v1/public/files/79a91f83-b54b-5de4-9183-e8b7d16f0232",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "6c906c0a-359c-52ef-9a46-4db8e5de0108",
+      "audience": "WORKER",
+      "icon": "user",
+      "title": "Как найти свои договоры и стаж",
+      "description": "Электронная трудовая книжка и справка с места работы",
+      "file": {
+        "id": "0660758e-f70b-5c95-aa0e-263f14f55370",
+        "url": "/cms/api/v1/public/files/0660758e-f70b-5c95-aa0e-263f14f55370",
+        "width": null,
+        "height": null,
+        "thumbnailUrl": null
+      },
+      "url": null,
+      "langUsed": "ru"
+    }
+  ],
+  "videoInstructions": [
+    {
+      "id": "a788d9a0-e9df-55d0-9ad3-ebbca3c08965",
+      "audience": "EMPLOYER",
+      "title": "Регистрация трудового договора",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 252,
+      "langUsed": "ru"
+    },
+    {
+      "id": "d3d61ad5-1bce-5155-9b71-2408619d33f8",
+      "audience": "EMPLOYER",
+      "title": "Заключение ЭТД через eGov Mobile Business",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 220,
+      "langUsed": "ru"
+    },
+    {
+      "id": "1a86c122-3cf8-5406-a4ff-7c9d98d2d645",
+      "audience": "EMPLOYER",
+      "title": "Штатное расписание: проект и утверждение",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 305,
+      "langUsed": "ru"
+    },
+    {
+      "id": "432bf7c7-feae-5b05-99f3-9044bd87d9d4",
+      "audience": "WORKER",
+      "title": "Как найти свои договоры и стаж",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 175,
+      "langUsed": "ru"
+    },
+    {
+      "id": "a9800903-7f3c-5916-8d59-1a10dc9fb099",
+      "audience": "WORKER",
+      "title": "Запрос на корректировку договора",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 198,
+      "langUsed": "ru"
+    },
+    {
+      "id": "252fa68f-0aa6-5751-98b6-b7719f43e71a",
+      "audience": "WORKER",
+      "title": "Электронные больничные листы",
+      "description": null,
+      "videoUrl": "https://www.youtube.com/@enbekkz",
+      "preview": {
+        "id": "b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "url": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f",
+        "width": 972,
+        "height": 480,
+        "thumbnailUrl": "/cms/api/v1/public/files/b4990796-64ab-5538-a1e5-1e26c4982f0f/thumbnail"
+      },
+      "durationSeconds": 160,
+      "langUsed": "ru"
+    }
+  ],
+  "agreements": [
+    {
+      "id": "ead89e71-e182-57c2-86a0-e945354416b7",
+      "kind": "GENERAL",
+      "region": null,
+      "title": "Генеральное соглашение",
+      "description": "Между Правительством РК, республиканскими объединениями работодателей и работников",
+      "files": {
+        "kk": {
+          "id": "cc10d552-c87e-5008-b9c5-9a5339e2ea94",
+          "url": "/cms/api/v1/public/files/cc10d552-c87e-5008-b9c5-9a5339e2ea94",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "bdbf4f76-0dc6-5502-aa45-5292b3753e52",
+          "url": "/cms/api/v1/public/files/bdbf4f76-0dc6-5502-aa45-5292b3753e52",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "5d25f768-94ed-52a8-90d2-81806bedc12e",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "710000000",
+        "name": "г. Астана",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: г. Астана",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "0687328f-a91b-5bff-aa78-11fe7b367809",
+          "url": "/cms/api/v1/public/files/0687328f-a91b-5bff-aa78-11fe7b367809",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "71db58d3-0bea-5ba3-b943-633241d93c76",
+          "url": "/cms/api/v1/public/files/71db58d3-0bea-5ba3-b943-633241d93c76",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "3197ad10-e871-548b-86c4-ae3287663dab",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "750000000",
+        "name": "г. Алматы",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: г. Алматы",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "f4f861ac-3a1f-5990-beb7-d9c4c251a519",
+          "url": "/cms/api/v1/public/files/f4f861ac-3a1f-5990-beb7-d9c4c251a519",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "3c23591c-91f7-5dad-a7da-86978dbe0924",
+          "url": "/cms/api/v1/public/files/3c23591c-91f7-5dad-a7da-86978dbe0924",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "8069656d-b00e-59b0-bbdd-d3fba343ded8",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "790000000",
+        "name": "г. Шымкент",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: г. Шымкент",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "5463e3f1-17ed-53dc-809c-c826a1efbff2",
+          "url": "/cms/api/v1/public/files/5463e3f1-17ed-53dc-809c-c826a1efbff2",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "7fbef015-0f20-54ec-be68-d59023882e26",
+          "url": "/cms/api/v1/public/files/7fbef015-0f20-54ec-be68-d59023882e26",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "8d6bc7f2-0355-559d-b216-315bbc9490d1",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "100000000",
+        "name": "область Абай",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Абайская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "344eeb9c-f726-5a04-ba06-225d88b7c278",
+          "url": "/cms/api/v1/public/files/344eeb9c-f726-5a04-ba06-225d88b7c278",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "67866212-702b-51fe-bdb4-f4f9dd79ab66",
+          "url": "/cms/api/v1/public/files/67866212-702b-51fe-bdb4-f4f9dd79ab66",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "a2aaa202-7a62-5414-abf1-6a4dad360fa7",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "110000000",
+        "name": "Акмолинская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Акмолинская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "f2c6f6d9-57d3-5d55-8ccd-e59dc873713f",
+          "url": "/cms/api/v1/public/files/f2c6f6d9-57d3-5d55-8ccd-e59dc873713f",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "22a90596-a60f-5951-be26-1ae18ca37c83",
+          "url": "/cms/api/v1/public/files/22a90596-a60f-5951-be26-1ae18ca37c83",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "749c6f09-887e-5d51-8bc2-7f7fb445c263",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "150000000",
+        "name": "Актюбинская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Актюбинская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "0712efb5-811e-5597-9e34-a95a32369e8a",
+          "url": "/cms/api/v1/public/files/0712efb5-811e-5597-9e34-a95a32369e8a",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "aeac5302-eebb-537d-992b-f868bff13d36",
+          "url": "/cms/api/v1/public/files/aeac5302-eebb-537d-992b-f868bff13d36",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "bfe64b92-c372-56c7-8441-d4214b264ed5",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "190000000",
+        "name": "Алматинская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Алматинская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "9ec8993b-e3bd-55e8-80c3-955a6b0d102c",
+          "url": "/cms/api/v1/public/files/9ec8993b-e3bd-55e8-80c3-955a6b0d102c",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "7a294190-b80f-5c8f-91ce-9f72dae4e7ad",
+          "url": "/cms/api/v1/public/files/7a294190-b80f-5c8f-91ce-9f72dae4e7ad",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "4456a8ca-074f-536f-9810-f1972ecae32d",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "230000000",
+        "name": "Атырауская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Атырауская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "2a574ef3-6928-5dc2-b040-36ee857488f3",
+          "url": "/cms/api/v1/public/files/2a574ef3-6928-5dc2-b040-36ee857488f3",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "13c4dc91-78fc-55ed-bf97-b59528abe9e5",
+          "url": "/cms/api/v1/public/files/13c4dc91-78fc-55ed-bf97-b59528abe9e5",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "0b7ddbe6-64ea-5cfd-a4a9-94596d4985df",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "630000000",
+        "name": "Восточно-Казахстанская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Восточно-Казахстанская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "8127165a-d3d2-5bb0-8775-9afc0a0d675d",
+          "url": "/cms/api/v1/public/files/8127165a-d3d2-5bb0-8775-9afc0a0d675d",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "2c9d778b-7b02-5999-8242-a5482761c3f9",
+          "url": "/cms/api/v1/public/files/2c9d778b-7b02-5999-8242-a5482761c3f9",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "64d6a1ee-ef10-5e98-ac6d-989824a695ab",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "310000000",
+        "name": "Жамбылская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Жамбылская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "57f31c4e-3eab-56c6-867d-8d0f61d3099e",
+          "url": "/cms/api/v1/public/files/57f31c4e-3eab-56c6-867d-8d0f61d3099e",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "af6acb6d-7aaa-5f2c-b357-df88fd489d53",
+          "url": "/cms/api/v1/public/files/af6acb6d-7aaa-5f2c-b357-df88fd489d53",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "93c6d9c3-c8f1-58eb-a19c-9622f836b071",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "330000000",
+        "name": "область Жетісу",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Жетысуская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "64e97fdd-7eb3-5e18-ae87-b36d6d3b06b9",
+          "url": "/cms/api/v1/public/files/64e97fdd-7eb3-5e18-ae87-b36d6d3b06b9",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "2dd53eab-b556-5ead-a1b1-a63bd7af23ef",
+          "url": "/cms/api/v1/public/files/2dd53eab-b556-5ead-a1b1-a63bd7af23ef",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "3515fd40-2c1b-5720-95cc-20cf573774a8",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "270000000",
+        "name": "Западно-Казахстанская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Западно-Казахстанская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "7a88369d-927d-59aa-af9c-0d02bc44567a",
+          "url": "/cms/api/v1/public/files/7a88369d-927d-59aa-af9c-0d02bc44567a",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "4bcf55ad-961d-5b6f-8ded-8fc0e45528ab",
+          "url": "/cms/api/v1/public/files/4bcf55ad-961d-5b6f-8ded-8fc0e45528ab",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "cffb103c-cb93-5160-b80d-78f51a482a41",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "350000000",
+        "name": "Карагандинская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Карагандинская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "ac495701-9165-5996-86b3-2b0616d6878e",
+          "url": "/cms/api/v1/public/files/ac495701-9165-5996-86b3-2b0616d6878e",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "4439ee5a-2274-5cfd-a2bc-88b8b2b93b0a",
+          "url": "/cms/api/v1/public/files/4439ee5a-2274-5cfd-a2bc-88b8b2b93b0a",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "916bcf5b-82ed-53f1-b213-3481646a163d",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "390000000",
+        "name": "Костанайская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Костанайская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "736e4713-d6ac-5b9c-a515-430e73824e78",
+          "url": "/cms/api/v1/public/files/736e4713-d6ac-5b9c-a515-430e73824e78",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "91f47f91-66bd-5602-ad33-00d897c1af7c",
+          "url": "/cms/api/v1/public/files/91f47f91-66bd-5602-ad33-00d897c1af7c",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "bd3e427e-d457-50ff-afdc-de1a53cea7c9",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "430000000",
+        "name": "Кызылординская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Кызылординская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "0749ae95-4268-56e3-ab3d-0e42c00eb842",
+          "url": "/cms/api/v1/public/files/0749ae95-4268-56e3-ab3d-0e42c00eb842",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "7443cc3c-6b61-5310-992c-2c922e941adc",
+          "url": "/cms/api/v1/public/files/7443cc3c-6b61-5310-992c-2c922e941adc",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "457ccfc1-8718-563e-8c11-e1a08375349c",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "470000000",
+        "name": "Мангистауская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Мангистауская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "954a3a15-bbed-56b6-8be7-aac863d69b14",
+          "url": "/cms/api/v1/public/files/954a3a15-bbed-56b6-8be7-aac863d69b14",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "86c5afc8-c938-57e2-8b1e-01bd2635bec1",
+          "url": "/cms/api/v1/public/files/86c5afc8-c938-57e2-8b1e-01bd2635bec1",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "bed8bdfd-99b6-5232-b334-8546364cbd1d",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "550000000",
+        "name": "Павлодарская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Павлодарская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "e6c472a4-aa69-5531-99cd-ba5857ff41a5",
+          "url": "/cms/api/v1/public/files/e6c472a4-aa69-5531-99cd-ba5857ff41a5",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "c1fcee23-af2b-5b75-be19-41aad18f3cca",
+          "url": "/cms/api/v1/public/files/c1fcee23-af2b-5b75-be19-41aad18f3cca",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "4c1ed79a-8a61-503c-ac1d-418b523cef21",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "590000000",
+        "name": "Северо-Казахстанская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Северо-Казахстанская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "8eef2976-c729-5527-b60d-1d6f98992635",
+          "url": "/cms/api/v1/public/files/8eef2976-c729-5527-b60d-1d6f98992635",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "dc9e188c-f6e9-55d1-bd02-9b83beff193b",
+          "url": "/cms/api/v1/public/files/dc9e188c-f6e9-55d1-bd02-9b83beff193b",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "aab62758-e2e0-5266-b03a-c29f62731b13",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "610000000",
+        "name": "Туркестанская область",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Туркестанская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "72e326d0-a353-5ec5-8acc-c72a93ba6970",
+          "url": "/cms/api/v1/public/files/72e326d0-a353-5ec5-8acc-c72a93ba6970",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "fd465f14-c3d4-5e3c-be30-01092468ce66",
+          "url": "/cms/api/v1/public/files/fd465f14-c3d4-5e3c-be30-01092468ce66",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    },
+    {
+      "id": "21994553-76d6-589a-b763-091c723441a2",
+      "kind": "REGIONAL",
+      "region": {
+        "code": "620000000",
+        "name": "область Ұлытау",
+        "langUsed": "ru"
+      },
+      "title": "Региональное соглашение: Улытауская область",
+      "description": null,
+      "files": {
+        "kk": {
+          "id": "993c718a-db37-5c60-91ef-0cc2b05a2b5b",
+          "url": "/cms/api/v1/public/files/993c718a-db37-5c60-91ef-0cc2b05a2b5b",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        },
+        "ru": {
+          "id": "597ca2df-de2c-5f7d-9759-be09b3d00109",
+          "url": "/cms/api/v1/public/files/597ca2df-de2c-5f7d-9759-be09b3d00109",
+          "width": null,
+          "height": null,
+          "thumbnailUrl": null
+        }
+      },
+      "langUsed": "ru"
+    }
+  ],
+  "regions": [
+    {
+      "code": "710000000",
+      "name": "г. Астана",
+      "langUsed": "ru"
+    },
+    {
+      "code": "750000000",
+      "name": "г. Алматы",
+      "langUsed": "ru"
+    },
+    {
+      "code": "790000000",
+      "name": "г. Шымкент",
+      "langUsed": "ru"
+    },
+    {
+      "code": "100000000",
+      "name": "область Абай",
+      "langUsed": "ru"
+    },
+    {
+      "code": "110000000",
+      "name": "Акмолинская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "150000000",
+      "name": "Актюбинская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "190000000",
+      "name": "Алматинская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "230000000",
+      "name": "Атырауская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "630000000",
+      "name": "Восточно-Казахстанская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "310000000",
+      "name": "Жамбылская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "330000000",
+      "name": "область Жетісу",
+      "langUsed": "ru"
+    },
+    {
+      "code": "270000000",
+      "name": "Западно-Казахстанская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "350000000",
+      "name": "Карагандинская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "390000000",
+      "name": "Костанайская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "430000000",
+      "name": "Кызылординская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "470000000",
+      "name": "Мангистауская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "550000000",
+      "name": "Павлодарская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "590000000",
+      "name": "Северо-Казахстанская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "610000000",
+      "name": "Туркестанская область",
+      "langUsed": "ru"
+    },
+    {
+      "code": "620000000",
+      "name": "область Ұлытау",
+      "langUsed": "ru"
+    }
+  ],
+  "services": [
+    {
+      "id": "0debfe7b-7acb-59b9-82cf-b9bb5086a71e",
+      "icon": "file-pen",
+      "title": "Регистрация трудовых договоров",
+      "subtitle": "В личном кабинете HR Enbek",
+      "description": "Работодатель вносит сведения о трудовом договоре, дополнительных соглашениях и расторжении в ЕСУТД через личный кабинет. Электронный договор подписывается сторонами удалённо, бумажный — регистрируется по реквизитам.",
+      "features": [
+        "Реестр договоров с фильтрами и массовыми действиями",
+        "Подписание ЭЦП или QR через eGov Mobile Business",
+        "Подходит для компаний любого размера и ИП"
+      ],
+      "flow": [],
+      "action": null,
+      "langUsed": "ru"
+    },
+    {
+      "id": "0a0f163d-8189-5d6e-b900-cc8ed01c4e15",
+      "icon": "refresh-cw",
+      "title": "Синхронизация трудовых договоров",
+      "subtitle": "Интеграция для крупных работодателей",
+      "description": "Сведения о договорах передаются в ЕСУТД напрямую из кадровых и учётных систем компании — без ручного ввода на портале.",
+      "features": [],
+      "flow": [
+        {
+          "icon": "database",
+          "title": "Кадровая система",
+          "text": "1С, SAP и другие"
+        },
+        {
+          "icon": "arrow-left-right",
+          "title": "Интеграция",
+          "text": "Обмен данными"
+        },
+        {
+          "icon": "network",
+          "title": "ЕСУТД",
+          "text": "Эталонная база"
+        }
+      ],
+      "action": {
+        "label": "Техническая документация",
+        "url": "/help/instructions",
+        "file": null
+      },
+      "langUsed": "ru"
+    }
+  ],
+  "laborInspections": [
+    {
+      "regionCode": "100000000",
+      "regionName": "область Абай",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Абайской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "110000000",
+      "regionName": "Акмолинская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Акмолинской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "150000000",
+      "regionName": "Актюбинская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Актюбинской области»",
+              "langUsed": "ru"
+            }
+          ]
+        },
+        {
+          "code": "addr",
+          "name": "Адрес",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "город Актобе, район Астана, улица Маресьева, 91",
+              "langUsed": "ru"
+            }
+          ]
+        },
+        {
+          "code": "phone",
+          "name": "Телефон приёмной",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "8 (7132) 45-86-18",
+              "langUsed": "ru"
+            }
+          ]
+        },
+        {
+          "code": "inspec",
+          "name": "ФИО инспекторов",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "Камиев Куаныш Жылкибаевич — руководитель отдела контроля безопасности и охраны труда — государственный инспектор труда",
+              "langUsed": "ru"
+            },
+            {
+              "value": "Зейнопалуы Акылбек — руководитель отдела контроля трудовых отношений — государственный инспектор труда",
+              "langUsed": "ru"
+            }
+          ]
+        },
+        {
+          "code": "head",
+          "name": "ФИО руководителя",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "Алимов Жандос Абильгазиевич",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "190000000",
+      "regionName": "Алматинская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Алматинской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "230000000",
+      "regionName": "Атырауская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Атырауской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "630000000",
+      "regionName": "Восточно-Казахстанская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Восточно-Казахстанской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "310000000",
+      "regionName": "Жамбылская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Жамбылской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "330000000",
+      "regionName": "область Жетісу",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Жетысуской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "270000000",
+      "regionName": "Западно-Казахстанская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Западно-Казахстанской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "350000000",
+      "regionName": "Карагандинская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Карагандинской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "390000000",
+      "regionName": "Костанайская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Костанайской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "430000000",
+      "regionName": "Кызылординская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Кызылординской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "470000000",
+      "regionName": "Мангистауская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Мангистауской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "550000000",
+      "regionName": "Павлодарская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Павлодарской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "590000000",
+      "regionName": "Северо-Казахстанская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Северо-Казахстанской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "610000000",
+      "regionName": "Туркестанская область",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Туркестанской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "620000000",
+      "regionName": "область Ұлытау",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по Улытауской области»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "710000000",
+      "regionName": "г. Астана",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по городу Астана»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "750000000",
+      "regionName": "г. Алматы",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по городу Алматы»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionCode": "790000000",
+      "regionName": "г. Шымкент",
+      "langUsed": "ru",
+      "groups": [
+        {
+          "code": "name",
+          "name": "Наименование департамента",
+          "langUsed": "ru",
+          "values": [
+            {
+              "value": "РГУ «Департамент Комитета государственной инспекции труда Министерства труда и социальной защиты населения Республики Казахстан по городу Шымкент»",
+              "langUsed": "ru"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "code": "contracts_active",
+      "title": "Договоров",
+      "langUsed": "ru",
+      "unit": "COUNT",
+      "value": 6900000,
+      "periodFrom": null,
+      "periodTo": "2026-10-19",
+      "calculatedAt": "2026-10-19T07:05:00Z",
+      "isStale": false,
+      "sortOrder": 10
+    },
+    {
+      "code": "employers_active",
+      "title": "Работодателей",
+      "langUsed": "ru",
+      "unit": "COUNT",
+      "value": 619621,
+      "periodFrom": null,
+      "periodTo": "2026-10-19",
+      "calculatedAt": "2026-10-19T07:05:00Z",
+      "isStale": false,
+      "sortOrder": 20
+    },
+    {
+      "code": "employees_active",
+      "title": "Работников",
+      "langUsed": "ru",
+      "unit": "COUNT",
+      "value": 5900000,
+      "periodFrom": null,
+      "periodTo": "2026-10-19",
+      "calculatedAt": "2026-10-19T07:05:00Z",
+      "isStale": false,
+      "sortOrder": 30
+    }
+  ]
+}

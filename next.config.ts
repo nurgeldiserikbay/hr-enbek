@@ -11,18 +11,31 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=()' },
 ];
 
+const cmsPublicUrl = URL.parse(process.env.CMS_PUBLIC_URL ?? '');
+
+const cmsImages = (cms: URL): NonNullable<NextConfig['images']> => ({
+  remotePatterns: [new URL(`${cms.origin}${cms.pathname.replace(/\/$/u, '')}/api/v1/public/files/**`)],
+  dangerouslyAllowLocalIP: cms.hostname === 'localhost',
+});
+
 const nextConfig: NextConfig = {
   output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
   reactCompiler: true,
   typedRoutes: true,
+  ...(cmsPublicUrl === null ? {} : { env: { CMS_PUBLIC_URL: cmsPublicUrl.href } }),
+  images: {
+    localPatterns: [{ pathname: '/_next/static/media/**' }],
+    ...(cmsPublicUrl === null ? {} : cmsImages(cmsPublicUrl)),
+  },
   headers() {
     return Promise.resolve([
       { source: '/:path*', headers: securityHeaders },
       { source: '/admin/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       { source: '/cabinet/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       { source: '/api/auth/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
+      { source: '/api/cms/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
     ]);
   },
 };

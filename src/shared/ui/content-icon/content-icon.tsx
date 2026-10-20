@@ -1,4 +1,5 @@
 import {
+  ArrowLeftRight,
   BookOpen,
   Briefcase,
   Building2,
@@ -12,6 +13,7 @@ import {
   Landmark,
   Layers,
   LogOut,
+  Network,
   QrCode,
   RefreshCw,
   Scale,
@@ -21,6 +23,7 @@ import {
 } from '@/shared/ui/icon';
 
 const CONTENT_ICONS: Record<string, IconComponent> = {
+  'arrow-left-right': ArrowLeftRight,
   'book-open': BookOpen,
   briefcase: Briefcase,
   'building-2': Building2,
@@ -33,6 +36,7 @@ const CONTENT_ICONS: Record<string, IconComponent> = {
   landmark: Landmark,
   layers: Layers,
   'log-out': LogOut,
+  network: Network,
   'qr-code': QrCode,
   'refresh-cw': RefreshCw,
   scale: Scale,
@@ -42,10 +46,10 @@ const CONTENT_ICONS: Record<string, IconComponent> = {
 };
 
 type ContentIconProps = Readonly<{
-  name: string;
+  name: string | undefined;
 }>;
 
 export function ContentIcon({ name }: ContentIconProps) {
-  const Icon = CONTENT_ICONS[name] ?? FileText;
+  const Icon = (name === undefined ? undefined : CONTENT_ICONS[name]) ?? FileText;
   return <Icon aria-hidden="true" />;
 }

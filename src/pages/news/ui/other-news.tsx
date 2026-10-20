@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 import { NewsDate, type NewsPreview } from '@/entities/news';
 import { Link, newsArticleRoute, ROUTES } from '@/shared/config';
@@ -12,6 +12,7 @@ type OtherNewsProps = Readonly<{
 
 export function OtherNews({ news }: OtherNewsProps) {
   const t = useTranslations('NewsArticlePage');
+  const locale = useLocale();
 
   return (
     <Card asChild className="p-4 lg:p-6">
@@ -21,17 +22,25 @@ export function OtherNews({ news }: OtherNewsProps) {
         </h2>
         <ul>
           {news.map((item) => (
-            <li key={item.id} className="relative border-b border-border-default py-4 last:border-b-0">
-              {item.category !== undefined && <Tag className="mb-2">{item.category.title}</Tag>}
+            <li
+              key={item.slug}
+              lang={item.language.lang}
+              className="relative border-b border-border-default py-4 last:border-b-0"
+            >
+              {item.category !== undefined && (
+                <Tag lang={item.category.lang} className="mb-2">
+                  {item.category.title}
+                </Tag>
+              )}
               <h3 className="text-body-l text-text-heading">
                 <Link
-                  href={newsArticleRoute(item.id)}
+                  href={newsArticleRoute(item.slug)}
                   className="after:absolute after:inset-0 hover:text-brand-primary-text focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-brand-primary-text"
                 >
                   {item.title}
                 </Link>
               </h3>
-              <p className="mt-1.5 text-caption text-text-muted">
+              <p lang={locale} className="mt-1.5 text-caption text-text-muted">
                 <NewsDate value={item.publishedAt} />
               </p>
             </li>

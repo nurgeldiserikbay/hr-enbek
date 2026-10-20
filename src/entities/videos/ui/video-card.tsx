@@ -19,22 +19,26 @@ type VideoCardProps = Readonly<{
 export function VideoCard({ video, badge }: VideoCardProps) {
   return (
     <Card asChild className="relative overflow-hidden">
-      <article>
+      <article lang={video.language.lang}>
         <div className="relative aspect-[3/2] bg-surface-page lg:aspect-[486/240]">
-          <Image
-            src={video.thumbnailUrl}
-            alt=""
-            fill
-            sizes="(min-width: 1024px) 486px, 100vw"
-            className="object-cover"
-          />
+          {video.thumbnailUrl !== undefined && (
+            <Image
+              src={video.thumbnailUrl}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 486px, 100vw"
+              className="object-cover"
+            />
+          )}
           <span className="absolute top-1/2 left-1/2 flex size-14 -translate-1/2 items-center justify-center rounded-full bg-surface-card text-text-heading shadow-floating lg:size-16">
             <Play aria-hidden="true" className="ml-0.5 size-6" />
           </span>
-          <span className="absolute right-3 bottom-3 flex items-center gap-1 rounded-full bg-overlay-dark-80 px-2 py-0.5 text-label text-text-inverse">
-            <Clock aria-hidden="true" className="size-3" />
-            <time dateTime={`PT${String(video.durationSeconds)}S`}>{formatDuration(video.durationSeconds)}</time>
-          </span>
+          {video.durationSeconds !== undefined && (
+            <span className="absolute right-3 bottom-3 flex items-center gap-1 rounded-full bg-overlay-dark-80 px-2 py-0.5 text-label text-text-inverse">
+              <Clock aria-hidden="true" className="size-3" />
+              <time dateTime={`PT${String(video.durationSeconds)}S`}>{formatDuration(video.durationSeconds)}</time>
+            </span>
+          )}
         </div>
         <div className="flex flex-col gap-2 p-4 lg:px-6 lg:pt-5 lg:pb-6">
           {badge}

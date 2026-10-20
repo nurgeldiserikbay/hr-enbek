@@ -1,9 +1,11 @@
 import { useTranslations } from 'next-intl';
 
 import type { Instruction } from '@/entities/instructions';
+import { cmsDownloadUrl } from '@/shared/api';
 import type { Audience } from '@/shared/config';
 import { Button } from '@/shared/ui/button';
 import { ContentIcon } from '@/shared/ui/content-icon';
+import { ContentLink } from '@/shared/ui/content-link';
 import { FeatureCard } from '@/shared/ui/feature-card';
 import { Download, FileText } from '@/shared/ui/icon';
 
@@ -31,23 +33,24 @@ export function InstructionsContent({ instructions, audience, query }: Instructi
             descriptionSize="lg"
             icon={<ContentIcon name={instruction.icon} />}
             title={instruction.title}
-            description={instruction.description}
+            contentLang={instruction.language.lang}
+            {...(instruction.description === undefined ? {} : { description: instruction.description })}
             badge={<AudienceTag audience={instruction.audience} />}
           >
             <div className="flex flex-wrap gap-2">
               <Button asChild size="sm" className="h-10 px-4 font-normal">
-                <a href={instruction.pdfUrl} download>
+                <a href={cmsDownloadUrl(instruction.pdfUrl)} download>
                   <Download aria-hidden="true" className="size-4" />
                   {t('downloadPdf')}
                   <span className="sr-only">: {instruction.title}</span>
                 </a>
               </Button>
               <Button asChild variant="secondary" size="sm" className="h-10 px-4 font-normal">
-                <a href={instruction.url}>
+                <ContentLink href={instruction.openUrl}>
                   <FileText aria-hidden="true" className="size-4" />
                   {t('open')}
                   <span className="sr-only">: {instruction.title}</span>
-                </a>
+                </ContentLink>
               </Button>
             </div>
           </FeatureCard>

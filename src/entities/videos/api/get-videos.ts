@@ -1,22 +1,24 @@
 import { z } from 'zod';
 
-import type { Audience } from '@/shared/config';
-import { matchesQuery } from '@/shared/lib/search';
+import { requestCms, toCmsAudience } from '@/shared/api';
+import type { Audience, Locale } from '@/shared/config';
 
-import { type Video, videoSchema } from '../model/video.ts';
-import { VIDEOS_MOCK } from './videos.mock.ts';
+import type { Video } from '../model/video.ts';
+import { videoSchema } from './video-schema.ts';
 
 interface VideoFilter {
+  locale: Locale;
   query?: string | undefined;
   audience?: Audience | undefined;
 }
 
-export function getVideos({ query, audience }: VideoFilter = {}): Promise<Video[]> {
-  return Promise.resolve(
-    z
-      .array(videoSchema)
-      .parse(VIDEOS_MOCK)
-      .filter((video) => audience === undefined || video.audience === audience)
-      .filter(({ title }) => matchesQuery(query, title)),
+export async function getVideos({ locale, query, audience }: VideoFilter): Promise<Video[]> {
+  return z.array(videoSchema).parse(
+    await requestCms({
+      path: '/api/v1/public/video-instructions',
+      locale,
+      sections: ['video-instructions'],
+      query: { audience: toCmsAudience(audience), q: query },
+    }),
   );
 }

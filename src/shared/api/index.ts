@@ -12,3 +12,19 @@ export {
   type ClientContext,
   requestAuthService,
 } from './auth-service/request-auth-service.ts';
+export { readCmsEnv } from './cms/cms-env.ts';
+export {
+  cmsAudienceSchema,
+  cmsContentLanguageShape,
+  cmsDownloadUrl,
+  type CmsFile,
+  cmsFileSchema,
+  cmsOptionalTextSchema,
+  cmsRichTextSchema,
+  type ContentLanguage,
+  fieldLanguage,
+  toCmsAudience,
+  toContentLanguage,
+} from './cms/cms-schemas.ts';
+export { CMS_SECTIONS, cmsSectionTag } from './cms/cms-sections.ts';
+export { requestCms } from './cms/request-cms.ts';

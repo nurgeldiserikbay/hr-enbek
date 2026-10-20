@@ -1,22 +1,24 @@
 import { z } from 'zod';
 
-import type { Audience } from '@/shared/config';
-import { matchesQuery } from '@/shared/lib/search';
+import { requestCms, toCmsAudience } from '@/shared/api';
+import type { Audience, Locale } from '@/shared/config';
 
-import { type Instruction, instructionSchema } from '../model/instruction.ts';
-import { INSTRUCTIONS_MOCK } from './instructions.mock.ts';
+import type { Instruction } from '../model/instruction.ts';
+import { instructionSchema } from './instruction-schema.ts';
 
 interface InstructionFilter {
+  locale: Locale;
   query?: string | undefined;
   audience?: Audience | undefined;
 }
 
-export function getInstructions({ query, audience }: InstructionFilter = {}): Promise<Instruction[]> {
-  return Promise.resolve(
-    z
-      .array(instructionSchema)
-      .parse(INSTRUCTIONS_MOCK)
-      .filter((item) => audience === undefined || item.audience === audience)
-      .filter(({ title, description }) => matchesQuery(query, title, description)),
+export async function getInstructions({ locale, query, audience }: InstructionFilter): Promise<Instruction[]> {
+  return z.array(instructionSchema).parse(
+    await requestCms({
+      path: '/api/v1/public/instructions',
+      locale,
+      sections: ['instructions'],
+      query: { audience: toCmsAudience(audience), q: query },
+    }),
   );
 }

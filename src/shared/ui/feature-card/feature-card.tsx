@@ -49,6 +49,7 @@ type FeatureCardProps = VariantProps<typeof featureCardVariants> &
     description?: string;
     badge?: ReactNode;
     href?: string;
+    contentLang?: string | undefined;
     children?: ReactNode;
     className?: string;
   }>;
@@ -59,6 +60,7 @@ export function FeatureCard({
   description,
   badge,
   href,
+  contentLang,
   layout,
   descriptionSize,
   children,
@@ -74,7 +76,7 @@ export function FeatureCard({
           {badge}
         </div>
         <div className={styles.body()}>
-          <h3 className={styles.title()}>
+          <h3 lang={contentLang} className={styles.title()}>
             {href === undefined ? (
               title
             ) : (
@@ -86,7 +88,11 @@ export function FeatureCard({
               </Link>
             )}
           </h3>
-          {description !== undefined && <p className={styles.description()}>{description}</p>}
+          {description !== undefined && (
+            <p lang={contentLang} className={styles.description()}>
+              {description}
+            </p>
+          )}
         </div>
         {children !== undefined && <div className="mt-4 lg:mt-5">{children}</div>}
       </article>

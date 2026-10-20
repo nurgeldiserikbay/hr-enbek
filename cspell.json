@@ -24,6 +24,7 @@
     "messages/kk.json",
     "docs/third-party-licenses.md",
     "**/*.mock.ts",
+    "tooling/mock-cms/fixtures.json",
     "design-diff"
   ]
 }

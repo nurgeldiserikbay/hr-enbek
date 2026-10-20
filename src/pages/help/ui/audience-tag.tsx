@@ -1,14 +1,16 @@
 import { useTranslations } from 'next-intl';
 
-import type { Audience } from '@/shared/config';
+import type { ContentAudience } from '@/shared/config';
 import { Tag } from '@/shared/ui/tag';
 
 type AudienceTagProps = Readonly<{
-  audience: Audience;
+  audience: ContentAudience;
 }>;
 
 export function AudienceTag({ audience }: AudienceTagProps) {
   const t = useTranslations('HelpPage.audience');
+
+  if (audience === 'all') return null;
 
   return (
     <Tag size="sm" tone={audience === 'employee' ? 'success' : 'neutral'}>

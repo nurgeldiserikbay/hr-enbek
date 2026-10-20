@@ -1,6 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const PORT = 3000;
+const MOCK_CMS_PORT = 8099;
 const isCi = Boolean(process.env['CI']);
 
 export default defineConfig({
@@ -32,9 +33,21 @@ export default defineConfig({
       },
     },
   ],
-  webServer: {
-    command: isCi ? 'pnpm start' : 'pnpm dev',
-    port: PORT,
-    reuseExistingServer: !isCi,
-  },
+  webServer: [
+    {
+      command: 'pnpm mock:cms',
+      port: MOCK_CMS_PORT,
+      env: { MOCK_CMS_PORT: String(MOCK_CMS_PORT) },
+      reuseExistingServer: !isCi,
+    },
+    {
+      command: isCi ? 'pnpm start' : 'pnpm dev',
+      port: PORT,
+      env: {
+        CMS_SERVICE_URL: `http://localhost:${String(MOCK_CMS_PORT)}/cms`,
+        CMS_PUBLIC_URL: `http://localhost:${String(MOCK_CMS_PORT)}/cms`,
+      },
+      reuseExistingServer: !isCi,
+    },
+  ],
 });

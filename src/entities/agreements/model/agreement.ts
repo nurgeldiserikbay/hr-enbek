@@ -1,10 +1,21 @@
-import { z } from 'zod';
+import type { ContentLanguage } from '@/shared/api';
+import type { Locale } from '@/shared/config';
 
-const filesSchema = z.object({ kk: z.string(), ru: z.string() });
+export interface AgreementFiles {
+  kk: string | undefined;
+  ru: string | undefined;
+}
 
-export const agreementsSchema = z.object({
-  general: z.object({ title: z.string(), description: z.string(), files: filesSchema }),
-  regional: z.array(z.object({ id: z.string(), title: z.string(), files: filesSchema })),
-});
+export interface Agreement {
+  id: string;
+  title: string;
+  titleLang: Locale;
+  description: string | undefined;
+  files: AgreementFiles;
+  language: ContentLanguage;
+}
 
-export type Agreements = z.infer<typeof agreementsSchema>;
+export interface Agreements {
+  general: readonly Agreement[];
+  regional: readonly Agreement[];
+}

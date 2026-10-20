@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import type { ReactNode } from 'react';
 
 import { getLabourInspections } from '@/entities/labour-inspections';
@@ -105,7 +105,7 @@ type AudiencePageProps = Readonly<{
 export async function AudiencePage({ audience }: AudiencePageProps) {
   const t = await getTranslations(`AudiencePage.${audience}`);
   const tCommon = await getTranslations('AudiencePage');
-  const inspections = await getLabourInspections();
+  const inspections = await getLabourInspections(await getLocale());
   const content = CONTENT[audience];
   const showcaseAction = content.hasShowcaseAction
     ? { action: { label: tCommon('employer.showcase.action'), href: ROUTES.helpInstructions } }

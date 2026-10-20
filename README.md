@@ -17,6 +17,8 @@ cp .env.example .env.local
 pnpm dev
 ```
 
+`.env.example` points at the cms-service test stand. Without access to it, run `pnpm mock:cms` and set `CMS_SERVICE_URL` and `CMS_PUBLIC_URL` to `http://localhost:8099/cms` (see [ADR 0007](docs/adr/0007-public-cms-content.md)). `CMS_PUBLIC_URL` is read at build time: the Docker image needs it as a build argument.
+
 Open <http://localhost:3000> → redirects to `/kk` (Kazakh is the default language).
 
 ## Scripts
@@ -24,6 +26,7 @@ Open <http://localhost:3000> → redirects to `/kk` (Kazakh is the default langu
 | Command                             | What it does                                                                     |
 | ----------------------------------- | -------------------------------------------------------------------------------- |
 | `pnpm dev`                          | Dev server (Turbopack)                                                           |
+| `pnpm mock:cms`                     | Public cms-service API from fixtures for development and e2e                     |
 | `pnpm build` / `pnpm start`         | Production build / run (`output: standalone`)                                    |
 | `pnpm check`                        | All static checks + unit tests + licenses. Run before handing over large changes |
 | `pnpm check:commit`                 | `tsc`, Steiger, knip, jscpd, i18n — project-wide checks run by pre-commit        |

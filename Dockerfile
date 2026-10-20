@@ -20,10 +20,13 @@ RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
 FROM base AS build
 ARG APP_ENV
 ARG NEXT_PUBLIC_SITE_URL
+ARG CMS_PUBLIC_URL
 RUN : "${APP_ENV:?build arg APP_ENV is required: dev, test or prod}" \
       "${NEXT_PUBLIC_SITE_URL:?build arg NEXT_PUBLIC_SITE_URL is required}" \
+      "${CMS_PUBLIC_URL:?build arg CMS_PUBLIC_URL is required}" \
  && case "$APP_ENV" in dev|test|prod) ;; *) echo "APP_ENV must be dev, test or prod, got: $APP_ENV" >&2; exit 1 ;; esac
-ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL} \
+    CMS_PUBLIC_URL=${CMS_PUBLIC_URL}
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN --mount=type=cache,id=next-cache-${APP_ENV},target=/app/.next/cache \

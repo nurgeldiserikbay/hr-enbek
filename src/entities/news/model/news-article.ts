@@ -1,11 +1,12 @@
-import { z } from 'zod';
+import type { Locale } from '@/shared/config';
+import type { RichTextDocument } from '@/shared/lib/rich-text';
 
-import { sanitizeRichText } from '@/shared/lib/rich-text';
+import type { NewsPreview } from './news-preview.ts';
 
-import { newsPreviewSchema } from './news-preview.ts';
-
-export const newsArticleSchema = newsPreviewSchema.extend({
-  body: z.string().transform(sanitizeRichText),
-});
-
-export type NewsArticle = z.infer<typeof newsArticleSchema>;
+export interface NewsArticle extends Omit<NewsPreview, 'excerpt'> {
+  lead: string | undefined;
+  body: RichTextDocument;
+  seo: { title: string | undefined; description: string | undefined };
+  languages: readonly Locale[];
+  related: readonly NewsPreview[];
+}

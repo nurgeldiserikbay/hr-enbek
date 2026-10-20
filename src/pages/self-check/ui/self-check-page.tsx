@@ -1,4 +1,4 @@
-import { getTranslations } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 
 import { getLabourInspections } from '@/entities/labour-inspections';
 import { getSelfCheckTopics } from '@/entities/self-checks';
@@ -14,7 +14,7 @@ import { LabourInspection } from '@/widgets/labour-inspection';
 
 export async function SelfCheckPage() {
   const t = await getTranslations('SelfCheck.topics');
-  const [topics, inspections] = await Promise.all([getSelfCheckTopics(), getLabourInspections()]);
+  const [topics, inspections] = await Promise.all([getSelfCheckTopics(), getLabourInspections(await getLocale())]);
 
   return (
     <main id={MAIN_CONTENT_ID} className="page-container flex flex-col gap-8 pt-6 pb-10 lg:gap-12 lg:pt-14 lg:pb-17">

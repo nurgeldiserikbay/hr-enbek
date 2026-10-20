@@ -28,8 +28,13 @@ type TagProps = VariantProps<typeof tagVariants> &
   Readonly<{
     children: ReactNode;
     className?: string;
+    lang?: string | undefined;
   }>;
 
-export function Tag({ tone, size, className, children }: TagProps) {
-  return <span className={tagVariants({ tone, size, className })}>{children}</span>;
+export function Tag({ tone, size, className, lang, children }: TagProps) {
+  return (
+    <span lang={lang} className={tagVariants({ tone, size, className })}>
+      {children}
+    </span>
+  );
 }

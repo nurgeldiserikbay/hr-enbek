@@ -24,7 +24,7 @@ export function NewsSection({ news }: NewsSectionProps) {
       previousLabel={t('previous')}
       nextLabel={t('next')}
       itemClassName="w-full max-w-[20.875rem] lg:w-[21.8125rem] lg:max-w-none"
-      items={news.map((item) => ({ key: item.id, node: <NewsCard news={item} className="w-full" /> }))}
+      items={news.map((item) => ({ key: item.slug, node: <NewsCard news={item} className="w-full" /> }))}
       actions={
         <Button asChild className="h-10 w-[13.375rem] shrink-0 text-body-l font-normal lg:w-auto lg:px-6">
           <Link href={ROUTES.news}>{t('all')}</Link>

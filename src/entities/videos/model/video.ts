@@ -1,14 +1,12 @@
-import { z } from 'zod';
+import type { ContentLanguage } from '@/shared/api';
+import type { ContentAudience } from '@/shared/config';
 
-import { AUDIENCES } from '@/shared/config';
-
-export const videoSchema = z.object({
-  id: z.string(),
-  title: z.string(),
-  audience: z.enum(AUDIENCES),
-  durationSeconds: z.number().int().positive(),
-  thumbnailUrl: z.string(),
-  url: z.string(),
-});
-
-export type Video = z.infer<typeof videoSchema>;
+export interface Video {
+  id: string;
+  title: string;
+  audience: ContentAudience;
+  durationSeconds: number | undefined;
+  thumbnailUrl: string | undefined;
+  url: string;
+  language: ContentLanguage;
+}

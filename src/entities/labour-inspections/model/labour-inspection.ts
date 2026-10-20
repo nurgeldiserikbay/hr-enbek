@@ -1,13 +1,18 @@
-import { z } from 'zod';
+import type { Locale } from '@/shared/config';
 
-export const labourInspectionSchema = z.object({
-  regionId: z.string(),
-  regionName: z.string(),
-  organization: z.string(),
-  address: z.string().optional(),
-  phone: z.string().optional(),
-  inspectors: z.array(z.string()),
-  director: z.string().optional(),
-});
+export interface InspectionDepartment {
+  organization: string | undefined;
+  address: string | undefined;
+  phone: string | undefined;
+  email: string | undefined;
+  inspectors: readonly string[];
+  director: string | undefined;
+  lang: Locale;
+}
 
-export type LabourInspection = z.infer<typeof labourInspectionSchema>;
+export interface LabourInspection {
+  regionId: string;
+  regionName: string;
+  regionLang: Locale;
+  department: InspectionDepartment | undefined;
+}
