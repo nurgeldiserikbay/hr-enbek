@@ -11,6 +11,11 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=()' },
 ];
 
+const noIndexHeaders = [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }];
+
+const siteHeaders =
+  process.env['APP_ENV'] === 'development' ? [...securityHeaders, ...noIndexHeaders] : securityHeaders;
+
 const cmsPublicUrl = URL.parse(process.env.CMS_PUBLIC_URL ?? '');
 
 const cmsImages = (cms: URL): NonNullable<NextConfig['images']> => ({
@@ -31,7 +36,7 @@ const nextConfig: NextConfig = {
   },
   headers() {
     return Promise.resolve([
-      { source: '/:path*', headers: securityHeaders },
+      { source: '/:path*', headers: siteHeaders },
       { source: '/admin/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       { source: '/cabinet/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
       { source: '/api/auth/:path*', headers: [{ key: 'Cache-Control', value: 'no-store' }] },
